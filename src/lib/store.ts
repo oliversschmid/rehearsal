@@ -83,83 +83,103 @@ function fsExists(key: Key): boolean {
  */
 type BlobRead<T> = { found: true; data: T } | { found: false };
 
-/* Why this is not simply `get(pathname, { access: "public" })`:
+/* Reads must never come off a cached copy, and on this store that rules out
+ * every fixed-pathname scheme:
  *
- * A public blob is served from its CDN URL, and `cacheControlMaxAge` cannot be
- * set below 60s — so a read straight after a write returns the PRE-write JSON,
- * and a just-created campaign 404s until the TTL lapses.
+ *   - A public blob is served from its CDN URL, and `cacheControlMaxAge`
+ *     cannot go below 60s. Overwrite the path, read it back, and you get the
+ *     PRE-write JSON — the just-created campaign that 404s for a minute.
+ *   - `useCache: false` does not help. The SDK honours it *only* for private
+ *     blobs (it appends `?cache=0` under `access === "private"` and silently
+ *     drops the flag otherwise), and this store is public: private writes are
+ *     rejected with "Cannot use private access on a public store".
+ *   - Cache-busting the URL does not help either. The blob CDN ignores unknown
+ *     query parameters, so `?t=123` resolves to the same cached object.
  *
- * The SDK's escape hatch does not help a public blob either. `useCache: false`
- * is honoured *only* for private blobs — it appends `?cache=0` under
- * `access === "private"` and silently drops the flag otherwise. Passing it
- * alongside `access: "public"` looks correct and does nothing.
- *
- * So state lives in PRIVATE blobs, which read from origin storage every time.
- * That also stops the customer records being world-readable.
+ * So nothing is ever overwritten. Every save writes a NEW immutable pathname
+ * stamped with the write time, and a read lists the prefix through the Blob
+ * HTTP API — `list()` is a control-plane call, not a CDN fetch, so it sees a
+ * write immediately — then fetches the newest entry. That URL has never been
+ * requested before, so there is no cached copy of it to serve, and its body
+ * never changes afterwards, which makes it safe for the CDN to keep.
  */
-const statePath = (key: Key) => `state/${key}.json`;
-/** Where collections lived before the public→private move. */
+const versionPrefix = (key: Key) => `state/${key}/`;
+/** Where collections lived when each one was a single overwritten blob. */
 const legacyPath = (key: Key) => `${key}.json`;
 
+/** Timestamp zero-padded so lexicographic pathname order == write order. */
+function versionedPath(key: Key): string {
+  const stamp = String(Date.now()).padStart(16, "0");
+  const token = Math.random().toString(36).slice(2, 10);
+  return `${versionPrefix(key)}${stamp}-${token}.json`;
+}
+
+/** Newest first. */
+function byNewest<T extends { pathname: string }>(blobs: T[]): T[] {
+  return blobs.slice().sort((a, b) => (a.pathname < b.pathname ? 1 : -1));
+}
+
 async function blobReadJson<T>(key: Key): Promise<BlobRead<T>> {
-  const { get } = await import("@vercel/blob");
-  let res: Awaited<ReturnType<typeof get>> = null;
-  try {
-    res = await get(statePath(key), { access: "private", useCache: false });
-  } catch (err) {
-    // Missing returns null, so reaching here means private reads are refused
-    // outright (e.g. unavailable for this store). Fall through to the legacy
-    // path rather than failing the request.
-    console.error(`[store] private blob read failed for ${key}, trying legacy`, err);
+  const { list } = await import("@vercel/blob");
+  const { blobs } = await list({ prefix: versionPrefix(key) });
+  const newest = byNewest(blobs)[0];
+  if (newest) {
+    const res = await fetch(newest.url, { cache: "no-store" });
+    // A 404 here means the version was pruned between listing and fetching,
+    // not that the collection is absent — surfacing it as "missing" would let
+    // loadCache seed over live data.
+    if (!res.ok) {
+      throw new Error(`[store] fetching ${newest.pathname} failed: ${res.status}`);
+    }
+    return { found: true, data: (await res.json()) as T };
   }
-  if (res?.statusCode === 200) {
-    return { found: true, data: (await new Response(res.stream).json()) as T };
-  }
-  const legacy = await readLegacyPublicJson<T>(key);
+  const legacy = await readLegacyJson<T>(key);
   return legacy ? { found: true, data: legacy } : { found: false };
 }
 
 /**
- * Reads a pre-migration public blob, or returns null when there isn't one.
- *
- * `head` goes through the Blob HTTP API rather than the CDN, so the URL and
- * metadata are current; the unique query string then gives the CDN a key it
- * has never seen, forcing a miss through to origin. Without that busting, a
- * migration could copy a stale snapshot forward and silently drop whatever was
- * written in the preceding minute.
+ * Reads the pre-versioning blob, or null when there isn't one. Only reached
+ * before a collection's first write under the new scheme; that blob has been
+ * sitting untouched for well over the cache TTL, so a cached read is fine.
  */
-async function readLegacyPublicJson<T>(key: Key): Promise<T | null> {
+async function readLegacyJson<T>(key: Key): Promise<T | null> {
   const { head, BlobNotFoundError } = await import("@vercel/blob");
   let url: string;
   try {
     ({ url } = await head(legacyPath(key)));
   } catch (err) {
     if (err instanceof BlobNotFoundError) return null; // genuinely nothing here
-    throw err; // a real failure — never let it read as "missing" and seed over live data
+    throw err; // a real failure — never let it read as "missing"
   }
-  const sep = url.includes("?") ? "&" : "?";
-  const res = await fetch(`${url}${sep}__origin=${Date.now()}`, { cache: "no-store" });
+  const res = await fetch(url, { cache: "no-store" });
   if (res.status === 404) return null;
-  if (!res.ok) throw new Error(`[store] legacy blob fetch for ${key} failed: ${res.status}`);
+  if (!res.ok) throw new Error(`[store] legacy fetch for ${key} failed: ${res.status}`);
   return (await res.json()) as T;
 }
 
 async function blobWriteJson(key: Key, data: unknown): Promise<void> {
   const { put } = await import("@vercel/blob");
-  const body = JSON.stringify(data, null, 2);
-  const opts = {
+  await put(versionedPath(key), JSON.stringify(data, null, 2), {
+    access: "public",
     addRandomSuffix: false,
     contentType: "application/json",
-    allowOverwrite: true,
-  } as const;
+  });
+  await pruneVersions(key);
+}
+
+/**
+ * Immutable writes accumulate, so drop the stale ones. Keeps several rather
+ * than one so a request that listed a moment ago can still fetch what it saw.
+ * Best-effort: a failed prune costs storage, never correctness.
+ */
+async function pruneVersions(key: Key, keep = 5): Promise<void> {
   try {
-    await put(statePath(key), body, { ...opts, access: "private" });
+    const { list, del } = await import("@vercel/blob");
+    const { blobs } = await list({ prefix: versionPrefix(key) });
+    const stale = byNewest(blobs).slice(keep);
+    if (stale.length) await del(stale.map((b) => b.url));
   } catch (err) {
-    // If private blobs aren't available to this store, keep writing public
-    // ones. Reads stay correct either way: blobReadJson falls through to the
-    // cache-busted legacy path, which also bypasses the CDN.
-    console.error(`[store] private blob write failed for ${key}, using public`, err);
-    await put(legacyPath(key), body, { ...opts, access: "public", cacheControlMaxAge: 60 });
+    console.error(`[store] pruning old ${key} versions failed`, err);
   }
 }
 
