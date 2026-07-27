@@ -1,6 +1,7 @@
 "use client";
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { createPortal } from "react-dom";
+import { useIsMounted } from "@/lib/clientHooks";
 
 export function SlideOver({
   title,
@@ -13,9 +14,8 @@ export function SlideOver({
   children: React.ReactNode;
   widthClass?: string;
 }) {
-  const [mounted, setMounted] = useState(false);
+  const mounted = useIsMounted();
   useEffect(() => {
-    setMounted(true);
     const onKey = (e: KeyboardEvent) => e.key === "Escape" && onClose();
     window.addEventListener("keydown", onKey);
     const prevOverflow = document.body.style.overflow;

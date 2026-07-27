@@ -40,23 +40,33 @@ function NewAudienceGroupSlideOver({ onClose }: { onClose: () => void }) {
   const [name, setName] = useState("");
   const [description, setDescription] = useState("");
   const [themes, setThemes] = useState<Set<TicketTheme>>(new Set());
-  const [matches, setMatches] = useState<PreviewMatch[]>([]);
-  const [loading, setLoading] = useState(false);
+  const [preview, setPreview] = useState<{ key: string; matches: PreviewMatch[] } | null>(null);
   const [saving, setSaving] = useState(false);
 
+  // Identity of the current filter. Doubles as the fetch key and as the way to
+  // tell whether the stored preview is still in step with what's selected.
+  const themeKey = [...themes].sort().join(",");
+
   useEffect(() => {
-    if (themes.size === 0) { setMatches([]); return; }
-    setLoading(true);
-    const themesArr = [...themes];
+    if (!themeKey) return;
+    let cancelled = false;
     fetch("/api/audience-preview", {
       method: "POST",
       headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ themes: themesArr }),
+      body: JSON.stringify({ themes: themeKey.split(",") }),
     })
       .then((r) => r.json())
-      .then((d) => setMatches(d.matches))
-      .finally(() => setLoading(false));
-  }, [themes]);
+      .then((d) => {
+        if (!cancelled) setPreview({ key: themeKey, matches: d.matches });
+      });
+    return () => { cancelled = true; };
+  }, [themeKey]);
+
+  // Derived rather than stored, so a result belonging to a superseded filter
+  // reads as "still loading" instead of flashing the previous selection's
+  // matches — and an out-of-order response can't overwrite a newer one.
+  const matches = preview?.key === themeKey ? preview.matches : [];
+  const loading = themeKey !== "" && preview?.key !== themeKey;
 
   function toggleTheme(t: TicketTheme) {
     setThemes((prev) => {

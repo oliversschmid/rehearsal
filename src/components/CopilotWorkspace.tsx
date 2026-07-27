@@ -1,6 +1,7 @@
 "use client";
 import { useEffect, useMemo, useRef, useState } from "react";
 import type { Campaign, CopilotIteration, CopilotMessage, Flow, FlowNode, MessageContent } from "@/lib/types";
+import { usePrefersReducedMotion } from "@/lib/clientHooks";
 import { MessageComposer } from "./MessageComposer";
 import { RailSlot } from "./rail/RailContext";
 import { SchedulePopover } from "./SchedulePopover";
@@ -39,7 +40,10 @@ export function CopilotWorkspace({
   );
   const viewingSnapshot = iterations.find((s) => s.iteration === viewingIteration) ?? null;
   const displayFlow = viewingSnapshot?.flow ?? campaign.flow;
-  const editingNode = editingNodeId ? campaign.flow.nodes[editingNodeId] : null;
+  // Resolved every render, so an id left pointing at a node the copilot has
+  // since regenerated away simply reads as "not editing" — no effect needed
+  // to null the id out afterwards.
+  const editingNode = (editingNodeId ? campaign.flow.nodes[editingNodeId] : null) ?? null;
   const isEditingMessage = editingNode?.type === "message";
 
   useEffect(() => {
@@ -75,10 +79,6 @@ export function CopilotWorkspace({
       clearInterval(id);
     };
   }, [resuming, campaign.id, onCampaignRefetched]);
-
-  useEffect(() => {
-    if (editingNodeId && !campaign.flow.nodes[editingNodeId]) setEditingNodeId(null);
-  }, [campaign.flow, editingNodeId]);
 
   async function saveMessageContent(nodeId: string, next: MessageContent) {
     const nextFlow: Flow = JSON.parse(JSON.stringify(campaign.flow));
@@ -146,7 +146,6 @@ export function CopilotWorkspace({
       const reader = res.body.getReader();
       const decoder = new TextDecoder();
       let buf = "";
-      // eslint-disable-next-line no-constant-condition
       while (true) {
         const { done, value } = await reader.read();
         if (done) break;
@@ -276,7 +275,7 @@ export function CopilotWorkspace({
               <FlowSummaryPane
                 campaign={{ ...campaign, flow: displayFlow, lastScore: viewingSnapshot?.score ?? campaign.lastScore }}
                 onSelectNode={(id) => setEditingNodeId(id)}
-                selectedNodeId={editingNodeId}
+                selectedNodeId={editingNode?.id ?? null}
                 onOpenSchedule={(rect) => setScheduleAnchor(rect)}
                 schedule={campaign.schedule}
               />
@@ -399,15 +398,7 @@ const TWIN_INITIALS = [
 
 function TwinAmbientField() {
   const [tick, setTick] = useState(0);
-  const [reduced, setReduced] = useState(false);
-
-  useEffect(() => {
-    const mq = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReduced(mq.matches);
-    const onChange = () => setReduced(mq.matches);
-    mq.addEventListener("change", onChange);
-    return () => mq.removeEventListener("change", onChange);
-  }, []);
+  const reduced = usePrefersReducedMotion();
 
   useEffect(() => {
     if (reduced) return;
@@ -530,18 +521,6 @@ function IterationSelector({
   );
 }
 
-function SkeletonFlow() {
-  return (
-    <div className="grid gap-3 w-72 mx-auto">
-      {[0, 1, 2, 3].map((i) => (
-        <div key={i} className="rounded-lg border border-[var(--border)] bg-white/70 p-4 animate-pulse" style={{ animationDelay: `${i * 120}ms` }}>
-          <div className="h-2 bg-gray-200 rounded w-1/3 mb-2" />
-          <div className="h-2.5 bg-gray-200 rounded w-2/3" />
-        </div>
-      ))}
-    </div>
-  );
-}
 
 function FlowSummaryPane({
   campaign,

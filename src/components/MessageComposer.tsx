@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import type { EmailContent, MessageContent, SmsContent } from "@/lib/types";
 import { ChannelFrame } from "./ChannelFrame";
 
@@ -20,11 +20,15 @@ export function MessageComposer({
   const [content, setContent] = useState<MessageContent>(initial);
   const [dirty, setDirty] = useState(false);
 
-  // Reset when opening a different node
-  useEffect(() => {
+  // Reset when pointed at a different node, or when the saved content changes
+  // underneath us. React's "adjust state during render" pattern rather than an
+  // effect — an effect would paint the previous node's content for one frame.
+  const [source, setSource] = useState({ nodeId, initial });
+  if (source.nodeId !== nodeId || source.initial !== initial) {
+    setSource({ nodeId, initial });
     setContent(initial);
     setDirty(false);
-  }, [nodeId, initial]);
+  }
 
   function update(next: MessageContent) {
     setContent(next);

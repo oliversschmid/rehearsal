@@ -74,7 +74,7 @@ export function CampaignEditor({
   const [running, setRunning] = useState(false);
   const [saving, setSaving] = useState(false);
   const [viewingRunId, setViewingRunId] = useState<string | null>(null);
-  const [compareLatest, setCompareLatest] = useState(false);
+  const [compareRequested, setCompareLatest] = useState(false);
 
   const working = pendingCampaign ?? campaign;
   const hasUnsavedFlow = !!pendingCampaign;
@@ -171,10 +171,10 @@ export function CampaignEditor({
   const viewingRun =
     viewingRunId ? runs.find((r) => r.runId === viewingRunId) ?? null : null;
 
-  // Reset compare flag when navigating between runs / back to latest.
-  useEffect(() => {
-    if (!viewingRun) setCompareLatest(false);
-  }, [viewingRun]);
+  // "Compare to latest" only means anything while a historical run is open,
+  // so gate it on that here. Navigating back to latest drops the comparison
+  // with no effect needed to chase the change.
+  const compareLatest = viewingRun ? compareRequested : false;
 
   // The compare toggle lives inside RehearsalView's HistoricalBanner but the
   // state is owned here. Listen for the banner's custom event.

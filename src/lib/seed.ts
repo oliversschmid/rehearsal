@@ -109,19 +109,6 @@ const TICKET_TEMPLATES: Record<TicketTheme, { subject: string; excerpts: string[
   },
 };
 
-const TRAIT_LIBRARY = [
-  "discount-conditioned",
-  "full-price repeat buyer",
-  "shipping-sensitive",
-  "ingredient-conscious",
-  "one-time gift buyer",
-  "subscription canceller",
-  "VIP",
-  "fatigued",
-  "brand loyal",
-  "price-sensitive",
-];
-
 type Archetype =
   | "vip_full_price"
   | "gift_one_time"
@@ -132,7 +119,7 @@ type Archetype =
   | "engaged_low_purchase"
   | "cold";
 
-function assignArchetype(i: number, total: number): Archetype {
+function assignArchetype(i: number, _total: number): Archetype {
   // Distribute recognizable archetypes; rest fall into a background mix.
   if (i < 8) return "vip_full_price";
   if (i < 16) return "loyal_shipping_complaint";
@@ -476,7 +463,7 @@ export function generateAudienceGroups(customers: Customer[]): AudienceGroup[] {
   ];
 }
 
-export function generateHistoricalCampaigns(groups: AudienceGroup[]): HistoricalCampaign[] {
+export function generateHistoricalCampaigns(_groups: AudienceGroup[]): HistoricalCampaign[] {
   const specs: Array<
     Omit<HistoricalCampaign, "id" | "sentAt" | "audienceGroupId"> & { audienceId: string }
   > = [

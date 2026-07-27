@@ -26,33 +26,29 @@ export function GroundingChip({ quality }: { quality: GroundingQuality }) {
  * The chip colour follows the standard score bands.
  */
 export function ScoreBadge({ score }: { score: number | undefined }) {
-  const [display, setDisplay] = useState<number | undefined>(score);
+  // Holds the tween value only while a count-up is in flight. The rest of the
+  // time `score` renders directly, so no effect has to seed this from props.
+  const [animated, setAnimated] = useState<number | null>(null);
   const prevRef = useRef<number | undefined>(score);
   const rafRef = useRef<number | null>(null);
 
   useEffect(() => {
-    if (score === undefined) {
-      setDisplay(undefined);
-      prevRef.current = undefined;
-      return;
-    }
-    const from = prevRef.current ?? score;
-    const to = score;
+    const from = prevRef.current;
     prevRef.current = score;
-    if (from === to) {
-      setDisplay(to);
-      return;
-    }
+    // Nothing to tween between: first paint, cleared score, or no change.
+    if (from === undefined || score === undefined || from === score) return;
+    // Copied post-guard so both read as plain numbers inside `step` — a
+    // hoisted function declaration doesn't inherit the narrowing above.
+    const base = from;
+    const to = score;
     const start = performance.now();
     const duration = 400;
     function step(t: number) {
       const p = Math.min(1, (t - start) / duration);
       const eased = 1 - Math.pow(1 - p, 3);
-      const value = Math.round(from + (to - from) * eased);
-      setDisplay(value);
-      if (p < 1) {
-        rafRef.current = requestAnimationFrame(step);
-      }
+      setAnimated(Math.round(base + (to - base) * eased));
+      if (p < 1) rafRef.current = requestAnimationFrame(step);
+      else setAnimated(null); // hand rendering back to the live score
     }
     rafRef.current = requestAnimationFrame(step);
     return () => {
@@ -60,6 +56,7 @@ export function ScoreBadge({ score }: { score: number | undefined }) {
     };
   }, [score]);
 
+  const display = animated ?? score;
   if (display === undefined) return <span className="chip">Not rehearsed</span>;
   const cls =
     display >= 85 ? "chip-success"

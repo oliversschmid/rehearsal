@@ -90,7 +90,7 @@ function mockTwinResponse(twin: Customer, content: MessageContent, campaignGoal:
   let openProp = 0.35;
   let clickIfOpen = 0.35;
   let unsubProp = 0.02;
-  let spamProp = 0.005;
+  const spamProp = 0.005;
 
   // Engagement baseline
   openProp += Math.min(0.35, twin.engagement.opensLast90d / 60);

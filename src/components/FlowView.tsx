@@ -1,5 +1,5 @@
 "use client";
-import { useEffect, useMemo, useRef, useState } from "react";
+import { useMemo, useRef, useState } from "react";
 import type { Campaign, Flow, FlowNode, MessageContent, Channel } from "@/lib/types";
 import { MessageComposer } from "./MessageComposer";
 import { SchedulePopover } from "./SchedulePopover";
@@ -28,10 +28,6 @@ export function FlowView({
   const [scheduleAnchor, setScheduleAnchor] = useState<DOMRect | null>(null);
   const gearRef = useRef<HTMLButtonElement>(null);
   const linearNodes = useMemo(() => walkLinear(campaign.flow), [campaign.flow]);
-
-  useEffect(() => {
-    if (selectedNodeId && !campaign.flow.nodes[selectedNodeId]) setSelectedNodeId(null);
-  }, [selectedNodeId, campaign.flow]);
 
   function commitFlow(nextFlow: Flow) {
     onCampaignChange({ ...campaign, flow: nextFlow });
@@ -108,7 +104,10 @@ export function FlowView({
     commitFlow(flow);
   }
 
-  const selectedNode = selectedNodeId ? campaign.flow.nodes[selectedNodeId] : null;
+  // Resolving the id every render means a selection pointing at a node that
+  // has since been removed simply reads as "nothing selected" — no effect
+  // needed to null the id out afterwards.
+  const selectedNode = (selectedNodeId ? campaign.flow.nodes[selectedNodeId] : null) ?? null;
   const isEditingMessage = selectedNode?.type === "message";
 
   return (
@@ -119,7 +118,7 @@ export function FlowView({
             <div key={n.id}>
               <NodeCard
                 node={n}
-                selected={selectedNodeId === n.id}
+                selected={selectedNode?.id === n.id}
                 onSelect={() => n.type === "message" ? setSelectedNodeId(n.id) : setSelectedNodeId(null)}
                 onDelay={updateDelay}
                 onDelete={n.type !== "trigger" ? () => deleteNode(n.id) : undefined}

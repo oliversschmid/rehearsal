@@ -323,13 +323,6 @@ function PopoverPanel({ children, onClose: _onClose }: { children: React.ReactNo
   );
 }
 
-function SparkleIcon() {
-  return (
-    <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M12 2l1.7 4.6L18 8.3l-4.6 1.7L11.7 15 10 10l-4.6-1.7L10 6.6 12 2zm7 10l1 2.6 2.6 1-2.6 1L19 19l-1-2.6-2.6-1L18 14.4 19 12z" />
-    </svg>
-  );
-}
 function PlusIcon() {
   return <svg width="10" height="10" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round"><path d="M12 5v14M5 12h14" /></svg>;
 }

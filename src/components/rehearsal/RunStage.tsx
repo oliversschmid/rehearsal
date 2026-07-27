@@ -7,6 +7,7 @@ import type {
   Verdict,
 } from "@/lib/types";
 import type { TwinMeta } from "../CampaignEditor";
+import { usePrefersReducedMotion } from "@/lib/clientHooks";
 
 /**
  * Phase 1 stage. Streams /api/rehearse events into a twin-avatar grid,
@@ -49,10 +50,14 @@ export function RunStage({
   onComplete,
   onCancel,
 }: RunStageProps) {
-  const startedAtRef = useRef<number>(Date.now());
+  // Stamped by the streaming effect on mount; 0 until then. Reading Date.now()
+  // as an initialiser would run during render, which isn't pure.
+  const startedAtRef = useRef<number>(0);
   const abortRef = useRef<AbortController | null>(null);
   const completedRef = useRef(false);
-  const [now, setNow] = useState<number>(Date.now());
+  // Elapsed is held directly as state rather than derived from a `now` clock
+  // minus a ref, so render never has to read a ref.
+  const [elapsedMs, setElapsedMs] = useState(0);
   const [chips, setChips] = useState<ChipState[]>(() =>
     twins.slice(0, totalTwins).map((t) => ({ twinId: t.id, action: null, filledAt: null })),
   );
@@ -60,25 +65,29 @@ export function RunStage({
   const [tickerVisible, setTickerVisible] = useState(true);
   const [partialVerdict, setPartialVerdict] = useState<Verdict | null>(null);
   const [earlyVerdictShown, setEarlyVerdictShown] = useState(false);
-  const [reducedMotion, setReducedMotion] = useState(false);
+  const reducedMotion = usePrefersReducedMotion();
   const partialHistoryRef = useRef<number[]>([]);
   const filledCount = chips.filter((c) => c.action !== null).length;
 
   const grounded = twins.filter((t) => t.grounding !== "thin").length;
   const projected = twins.length - grounded;
 
-  useEffect(() => {
-    if (typeof window === "undefined") return;
-    const m = window.matchMedia("(prefers-reduced-motion: reduce)");
-    setReducedMotion(m.matches);
-    const cb = () => setReducedMotion(m.matches);
-    m.addEventListener("change", cb);
-    return () => m.removeEventListener("change", cb);
-  }, []);
+  function fillChip(twinId: string, action: Action) {
+    setChips((prev) => {
+      const idx = prev.findIndex((c) => c.twinId === twinId && c.action === null);
+      if (idx < 0) return prev;
+      const next = prev.slice();
+      next[idx] = { ...next[idx], action, filledAt: Date.now() };
+      return next;
+    });
+  }
 
   // Ticking elapsed-time counter (250ms cadence)
   useEffect(() => {
-    const id = setInterval(() => setNow(Date.now()), 250);
+    const id = setInterval(() => {
+      const startedAt = startedAtRef.current;
+      setElapsedMs(startedAt ? Date.now() - startedAt : 0);
+    }, 250);
     return () => clearInterval(id);
   }, []);
 
@@ -135,7 +144,6 @@ export function RunStage({
         const reader = res.body.getReader();
         const decoder = new TextDecoder();
         let buf = "";
-        // eslint-disable-next-line no-constant-condition
         while (true) {
           if (Date.now() - startedAt > MAX_STAGE_MS) {
             controller.abort();
@@ -205,16 +213,6 @@ export function RunStage({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [campaign.id]);
 
-  function fillChip(twinId: string, action: Action) {
-    setChips((prev) => {
-      const idx = prev.findIndex((c) => c.twinId === twinId && c.action === null);
-      if (idx < 0) return prev;
-      const next = prev.slice();
-      next[idx] = { ...next[idx], action, filledAt: Date.now() };
-      return next;
-    });
-  }
-
   // Early verdict detection: >=60% responded AND partial verdict stable in
   // the last 10% of arrivals (within ±3 across the last window).
   useEffect(() => {
@@ -235,7 +233,6 @@ export function RunStage({
     onCancel();
   }
 
-  const elapsedMs = now - startedAtRef.current;
   const elapsedLabel = formatElapsed(elapsedMs);
   const progressPct = chips.length ? (filledCount / chips.length) * 100 : 0;
   const respondedLabel = `${filledCount} of ${chips.length} twin${chips.length === 1 ? "" : "s"} ${filledCount === 1 ? "has" : "have"} responded`;
