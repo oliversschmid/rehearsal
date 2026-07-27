@@ -89,28 +89,45 @@ export function CampaignEditor({
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [campaign.id]);
 
-  // Resume-poll: if a copilot campaign is still iterating on mount (user
-  // navigated away mid-run) or transitions back into iterating, poll every
-  // 2s until the server marks it "ready", then refresh runs + rehearsal so
-  // the Rehearsal tab and rail catch up without a page refresh.
+  /** Pulls the verdict and run history for a campaign whose rehearsal landed
+   *  after this page was rendered. */
+  const refetchRehearsalState = useCallback(async (id: string) => {
+    const [rr, rs] = await Promise.all([
+      fetch(`/api/rehearsal/${id}`),
+      fetch(`/api/campaigns/${id}/runs`),
+    ]);
+    if (rr.ok) setRehearsal(await rr.json());
+    if (rs.ok) setRuns(await rs.json());
+  }, []);
+
+  // A copilot campaign rehearses after this page was server-rendered, so
+  // `rehearsal` starts null and `copilotState` may still be "iterating".
+  // Without catching up, the Rehearsal tab renders CopilotStillRehearsingState
+  // — a static spinner that polls nothing — so a verdict that finished long ago
+  // only appears on a manual refresh. It isn't loading; it just looks like it.
+  const awaitingCopilotVerdict =
+    campaign.copilotState === "iterating" || (!!campaign.copilotMode && !rehearsal);
+
   useEffect(() => {
-    if (campaign.copilotState !== "iterating") return;
+    if (!awaitingCopilotVerdict || running) return;
+    let cancelled = false;
+    let attempts = 0;
     const id = setInterval(async () => {
+      // Bounded: a copilot campaign abandoned before it ever generated would
+      // otherwise poll for the lifetime of the tab.
+      if (++attempts > 45) {
+        clearInterval(id);
+        return;
+      }
       try {
         const res = await fetch(`/api/campaigns/${campaign.id}`);
-        if (!res.ok) return;
-        const c: Campaign = await res.json();
-        setCampaign(c);
-        if (c.copilotState !== "iterating") {
-          const rr = await fetch(`/api/rehearsal/${c.id}`);
-          if (rr.ok) setRehearsal(await rr.json());
-          const rs = await fetch(`/api/campaigns/${c.id}/runs`);
-          if (rs.ok) setRuns(await rs.json());
-        }
+        if (cancelled || !res.ok) return;
+        setCampaign(await res.json());
+        if (!cancelled) await refetchRehearsalState(campaign.id);
       } catch { /* keep polling */ }
     }, 2000);
-    return () => clearInterval(id);
-  }, [campaign.copilotState, campaign.id]);
+    return () => { cancelled = true; clearInterval(id); };
+  }, [awaitingCopilotVerdict, running, campaign.id, refetchRehearsalState]);
 
   function switchView(v: View) {
     if (hasUnsavedFlow && v !== "flow") return;
@@ -143,10 +160,7 @@ export function CampaignEditor({
   async function refetchCampaign() {
     const c = await fetch(`/api/campaigns/${campaign.id}`).then((r) => r.json());
     setCampaign(c);
-    const r = await fetch(`/api/rehearsal/${campaign.id}`);
-    if (r.ok) setRehearsal(await r.json());
-    const rs = await fetch(`/api/campaigns/${campaign.id}/runs`);
-    if (rs.ok) setRuns(await rs.json());
+    await refetchRehearsalState(campaign.id);
   }
 
   async function runLifecycleAction(action: "launch" | "pause" | "resume" | "stop" | "archive" | "unarchive") {
@@ -316,7 +330,12 @@ export function CampaignEditor({
       {view === "flow" && campaign.copilotMode && (
         <CopilotWorkspace
           initialCampaign={campaign}
-          onCampaignRefetched={(c) => setCampaign(c)}
+          onCampaignRefetched={(c) => {
+            setCampaign(c);
+            // Copilot has just written new runs; pull the verdict too, or the
+            // Rehearsal tab keeps rendering its never-resolving spinner.
+            void refetchRehearsalState(c.id);
+          }}
         />
       )}
       {view === "flow" && !campaign.copilotMode && (
