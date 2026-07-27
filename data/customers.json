@@ -1,0 +1,8012 @@
+[
+  {
+    "id": "c000",
+    "firstName": "Maya",
+    "lastInitial": "F",
+    "createdAt": "2025-04-25T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c000-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 148
+      },
+      {
+        "id": "c000-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 102
+      },
+      {
+        "id": "c000-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 102
+      },
+      {
+        "id": "c000-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 116
+      },
+      {
+        "id": "c000-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 78
+      },
+      {
+        "id": "c000-o5",
+        "date": "2026-03-09T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 288
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 27,
+      "clicksLast90d": 10,
+      "lastOpenDaysAgo": 1,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 3,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c000-o0"
+          },
+          {
+            "type": "order",
+            "id": "c000-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c000-o0"
+          },
+          {
+            "type": "order",
+            "id": "c000-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c001",
+    "firstName": "Jordan",
+    "lastInitial": "S",
+    "createdAt": "2025-12-18T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c001-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 76
+      },
+      {
+        "id": "c001-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 116
+      },
+      {
+        "id": "c001-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 140
+      },
+      {
+        "id": "c001-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 68
+      },
+      {
+        "id": "c001-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 162
+      },
+      {
+        "id": "c001-o5",
+        "date": "2026-03-09T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      },
+      {
+        "id": "c001-o6",
+        "date": "2026-02-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 124
+      },
+      {
+        "id": "c001-o7",
+        "date": "2026-01-18T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 120
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 27,
+      "clicksLast90d": 8,
+      "lastOpenDaysAgo": 3,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 4,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c001-o0"
+          },
+          {
+            "type": "order",
+            "id": "c001-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c001-o0"
+          },
+          {
+            "type": "order",
+            "id": "c001-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c002",
+    "firstName": "Ava",
+    "lastInitial": "Y",
+    "createdAt": "2025-12-09T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c002-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 318
+      },
+      {
+        "id": "c002-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 48
+      },
+      {
+        "id": "c002-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 174
+      },
+      {
+        "id": "c002-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 282
+      },
+      {
+        "id": "c002-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 120
+      },
+      {
+        "id": "c002-o5",
+        "date": "2026-03-09T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 140
+      },
+      {
+        "id": "c002-o6",
+        "date": "2026-02-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 86
+      },
+      {
+        "id": "c002-o7",
+        "date": "2026-01-18T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 170
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 19,
+      "clicksLast90d": 8,
+      "lastOpenDaysAgo": 3,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 4,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c002-o0"
+          },
+          {
+            "type": "order",
+            "id": "c002-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c002-o0"
+          },
+          {
+            "type": "order",
+            "id": "c002-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c003",
+    "firstName": "Liam",
+    "lastInitial": "W",
+    "createdAt": "2025-03-09T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c003-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 34
+      },
+      {
+        "id": "c003-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 216
+      },
+      {
+        "id": "c003-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 144
+      },
+      {
+        "id": "c003-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 226
+      },
+      {
+        "id": "c003-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 218
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 22,
+      "clicksLast90d": 8,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 4,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c003-o0"
+          },
+          {
+            "type": "order",
+            "id": "c003-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c003-o0"
+          },
+          {
+            "type": "order",
+            "id": "c003-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c004",
+    "firstName": "Sofia",
+    "lastInitial": "R",
+    "createdAt": "2025-06-18T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c004-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 82
+      },
+      {
+        "id": "c004-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 268
+      },
+      {
+        "id": "c004-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 154
+      },
+      {
+        "id": "c004-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 86
+      },
+      {
+        "id": "c004-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 216
+      },
+      {
+        "id": "c004-o5",
+        "date": "2026-03-09T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 72
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 22,
+      "clicksLast90d": 10,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c004-o0"
+          },
+          {
+            "type": "order",
+            "id": "c004-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c004-o0"
+          },
+          {
+            "type": "order",
+            "id": "c004-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c005",
+    "firstName": "Noah",
+    "lastInitial": "T",
+    "createdAt": "2025-03-21T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c005-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 68
+      },
+      {
+        "id": "c005-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      },
+      {
+        "id": "c005-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 318
+      },
+      {
+        "id": "c005-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 154
+      },
+      {
+        "id": "c005-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 48
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 19,
+      "clicksLast90d": 10,
+      "lastOpenDaysAgo": 5,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 3,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c005-o0"
+          },
+          {
+            "type": "order",
+            "id": "c005-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c005-o0"
+          },
+          {
+            "type": "order",
+            "id": "c005-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c006",
+    "firstName": "Emma",
+    "lastInitial": "H",
+    "createdAt": "2025-05-09T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c006-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 120
+      },
+      {
+        "id": "c006-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 248
+      },
+      {
+        "id": "c006-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 250
+      },
+      {
+        "id": "c006-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 44
+      },
+      {
+        "id": "c006-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 220
+      },
+      {
+        "id": "c006-o5",
+        "date": "2026-03-09T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 54
+      },
+      {
+        "id": "c006-o6",
+        "date": "2026-02-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 138
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 27,
+      "clicksLast90d": 10,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 3,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c006-o0"
+          },
+          {
+            "type": "order",
+            "id": "c006-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c006-o0"
+          },
+          {
+            "type": "order",
+            "id": "c006-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c007",
+    "firstName": "Ethan",
+    "lastInitial": "C",
+    "createdAt": "2025-04-14T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c007-o0",
+        "date": "2026-07-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 262
+      },
+      {
+        "id": "c007-o1",
+        "date": "2026-06-17T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 148
+      },
+      {
+        "id": "c007-o2",
+        "date": "2026-05-23T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 112
+      },
+      {
+        "id": "c007-o3",
+        "date": "2026-04-28T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 136
+      },
+      {
+        "id": "c007-o4",
+        "date": "2026-04-03T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 134
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 23,
+      "clicksLast90d": 8,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 4,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "VIP",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c007-o0"
+          },
+          {
+            "type": "order",
+            "id": "c007-o1"
+          }
+        ]
+      },
+      {
+        "label": "full-price repeat buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c007-o0"
+          },
+          {
+            "type": "order",
+            "id": "c007-o1"
+          }
+        ]
+      },
+      {
+        "label": "engaged",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c008",
+    "firstName": "Olivia",
+    "lastInitial": "N",
+    "createdAt": "2025-09-27T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c008-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 148
+      },
+      {
+        "id": "c008-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      },
+      {
+        "id": "c008-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 98
+      },
+      {
+        "id": "c008-o3",
+        "date": "2026-03-10T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 48
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c008-t0",
+        "date": "2026-06-14T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "This is my third order and the shipping is always so slow. Considering going back to Sephora.",
+        "resolved": false
+      },
+      {
+        "id": "c008-t1",
+        "date": "2026-04-09T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "This is my third order and the shipping is always so slow. Considering going back to Sephora.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 8,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c008-o0"
+          },
+          {
+            "type": "order",
+            "id": "c008-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c008-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c008-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c009",
+    "firstName": "Aiden",
+    "lastInitial": "L",
+    "createdAt": "2025-09-30T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c009-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 44
+      },
+      {
+        "id": "c009-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 32
+      },
+      {
+        "id": "c009-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 68
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c009-t0",
+        "date": "2026-06-27T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "This is my third order and the shipping is always so slow. Considering going back to Sephora.",
+        "resolved": true
+      },
+      {
+        "id": "c009-t1",
+        "date": "2026-04-07T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hi — the box arrived but two of the items were missing. Frustrating.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 14,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 9,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c009-o0"
+          },
+          {
+            "type": "order",
+            "id": "c009-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c009-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c009-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c010",
+    "firstName": "Mia",
+    "lastInitial": "W",
+    "createdAt": "2025-07-01T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c010-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 130
+      },
+      {
+        "id": "c010-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 44
+      },
+      {
+        "id": "c010-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c010-t0",
+        "date": "2026-06-27T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "This is my third order and the shipping is always so slow. Considering going back to Sephora.",
+        "resolved": true
+      },
+      {
+        "id": "c010-t1",
+        "date": "2026-04-07T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hi — the box arrived but two of the items were missing. Frustrating.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 5,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c010-o0"
+          },
+          {
+            "type": "order",
+            "id": "c010-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c010-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c010-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c011",
+    "firstName": "Lucas",
+    "lastInitial": "S",
+    "createdAt": "2025-08-31T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c011-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      },
+      {
+        "id": "c011-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 82
+      },
+      {
+        "id": "c011-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 116
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c011-t0",
+        "date": "2026-06-16T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hey, my order's been stuck in 'shipped' for 9 days now. Any update? Kind of frustrated tbh.",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 11,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 9,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c011-o0"
+          },
+          {
+            "type": "order",
+            "id": "c011-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c011-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c012",
+    "firstName": "Zoe",
+    "lastInitial": "C",
+    "createdAt": "2026-03-24T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c012-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 126
+      },
+      {
+        "id": "c012-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 34
+      },
+      {
+        "id": "c012-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 62
+      },
+      {
+        "id": "c012-o3",
+        "date": "2026-03-10T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c012-t0",
+        "date": "2026-06-30T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hi — the box arrived but two of the items were missing. Frustrating.",
+        "resolved": true
+      },
+      {
+        "id": "c012-t1",
+        "date": "2026-04-15T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hey, my order's been stuck in 'shipped' for 9 days now. Any update? Kind of frustrated tbh.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 5,
+      "lastOpenDaysAgo": 8,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c012-o0"
+          },
+          {
+            "type": "order",
+            "id": "c012-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c012-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c012-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c013",
+    "firstName": "Isaac",
+    "lastInitial": "W",
+    "createdAt": "2025-05-02T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c013-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 68
+      },
+      {
+        "id": "c013-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 182
+      },
+      {
+        "id": "c013-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c013-t0",
+        "date": "2026-06-05T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hey, my order's been stuck in 'shipped' for 9 days now. Any update? Kind of frustrated tbh.",
+        "resolved": false
+      },
+      {
+        "id": "c013-t1",
+        "date": "2026-04-28T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hi — the box arrived but two of the items were missing. Frustrating.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 11,
+      "clicksLast90d": 5,
+      "lastOpenDaysAgo": 9,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c013-o0"
+          },
+          {
+            "type": "order",
+            "id": "c013-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c013-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c013-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c014",
+    "firstName": "Isla",
+    "lastInitial": "N",
+    "createdAt": "2026-03-08T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c014-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      },
+      {
+        "id": "c014-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 54
+      },
+      {
+        "id": "c014-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 32
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c014-t0",
+        "date": "2026-06-18T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hey, my order's been stuck in 'shipped' for 9 days now. Any update? Kind of frustrated tbh.",
+        "resolved": true
+      },
+      {
+        "id": "c014-t1",
+        "date": "2026-04-15T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hi — the box arrived but two of the items were missing. Frustrating.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 15,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 6,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c014-o0"
+          },
+          {
+            "type": "order",
+            "id": "c014-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c014-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c014-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c015",
+    "firstName": "Leo",
+    "lastInitial": "Z",
+    "createdAt": "2025-05-04T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c015-o0",
+        "date": "2026-07-08T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 82
+      },
+      {
+        "id": "c015-o1",
+        "date": "2026-05-29T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 44
+      },
+      {
+        "id": "c015-o2",
+        "date": "2026-04-19T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 148
+      },
+      {
+        "id": "c015-o3",
+        "date": "2026-03-10T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c015-t0",
+        "date": "2026-06-10T13:55:11.620Z",
+        "theme": "shipping-delay",
+        "subject": "Where is my order?",
+        "excerpt": "Hi — the box arrived but two of the items were missing. Frustrating.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 11,
+      "clicksLast90d": 5,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "brand loyal",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c015-o0"
+          },
+          {
+            "type": "order",
+            "id": "c015-o1"
+          }
+        ]
+      },
+      {
+        "label": "shipping-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c015-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c016",
+    "firstName": "Nora",
+    "lastInitial": "A",
+    "createdAt": "2025-07-06T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c016-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 66
+      },
+      {
+        "id": "c016-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 106
+      },
+      {
+        "id": "c016-o2",
+        "date": "2026-03-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 76
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c016-t0",
+        "date": "2026-06-03T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "Cancel. I don't need this arriving every 30 days, I still have two unopened bottles.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 7,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 15,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c016-t0"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c016-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c017",
+    "firstName": "Owen",
+    "lastInitial": "M",
+    "createdAt": "2025-08-03T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c017-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 32
+      },
+      {
+        "id": "c017-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c017-t0",
+        "date": "2026-06-01T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "Cancel. I don't need this arriving every 30 days, I still have two unopened bottles.",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 31,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c017-t0"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c017-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c018",
+    "firstName": "Elena",
+    "lastInitial": "G",
+    "createdAt": "2025-05-19T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c018-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 102
+      },
+      {
+        "id": "c018-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 54
+      },
+      {
+        "id": "c018-o2",
+        "date": "2026-03-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 82
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c018-t0",
+        "date": "2026-06-04T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "Cancel. I don't need this arriving every 30 days, I still have two unopened bottles.",
+        "resolved": true
+      },
+      {
+        "id": "c018-t1",
+        "date": "2026-05-31T13:55:11.620Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "First-time buyer here — is there a welcome discount I'm missing?",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 24,
+      "unsubRisk": "high",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c018-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c018-t1"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c018-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c018-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c019",
+    "firstName": "Kai",
+    "lastInitial": "C",
+    "createdAt": "2026-02-14T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c019-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 148
+      },
+      {
+        "id": "c019-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 86
+      },
+      {
+        "id": "c019-o2",
+        "date": "2026-03-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 48
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c019-t0",
+        "date": "2026-06-20T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "Please cancel — the price keeps going up and I can find the same ingredients cheaper elsewhere.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 6,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 30,
+      "unsubRisk": "high",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c019-t0"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c019-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c020",
+    "firstName": "Harper",
+    "lastInitial": "F",
+    "createdAt": "2025-09-07T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c020-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 104
+      },
+      {
+        "id": "c020-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 54
+      },
+      {
+        "id": "c020-o2",
+        "date": "2026-03-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 140
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c020-t0",
+        "date": "2026-06-11T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "I love the product but $68 every month is more than I can commit to right now. Cancel please.",
+        "resolved": true
+      },
+      {
+        "id": "c020-t1",
+        "date": "2026-06-01T13:55:11.620Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "First-time buyer here — is there a welcome discount I'm missing?",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 6,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 31,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c020-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c020-t1"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c020-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c020-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c021",
+    "firstName": "Mateo",
+    "lastInitial": "F",
+    "createdAt": "2025-12-19T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c021-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 34
+      },
+      {
+        "id": "c021-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 202
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c021-t0",
+        "date": "2026-06-14T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "I love the product but $68 every month is more than I can commit to right now. Cancel please.",
+        "resolved": true
+      },
+      {
+        "id": "c021-t1",
+        "date": "2026-06-01T13:55:11.620Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "Are there any active codes? I was about to check out and saw the total. A bit steep.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 13,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c021-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c021-t1"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c021-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c021-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c022",
+    "firstName": "Ruby",
+    "lastInitial": "H",
+    "createdAt": "2025-05-11T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c022-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 122
+      },
+      {
+        "id": "c022-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 68
+      },
+      {
+        "id": "c022-o2",
+        "date": "2026-03-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 116
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c022-t0",
+        "date": "2026-06-12T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "I love the product but $68 every month is more than I can commit to right now. Cancel please.",
+        "resolved": true
+      },
+      {
+        "id": "c022-t1",
+        "date": "2026-05-31T13:55:11.620Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "First-time buyer here — is there a welcome discount I'm missing?",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 28,
+      "unsubRisk": "high",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c022-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c022-t1"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c022-t0"
+          },
+          {
+            "type": "ticket",
+            "id": "c022-t1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c023",
+    "firstName": "Miles",
+    "lastInitial": "W",
+    "createdAt": "2026-01-11T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c023-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      },
+      {
+        "id": "c023-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 130
+      },
+      {
+        "id": "c023-o2",
+        "date": "2026-03-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 60
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c023-t0",
+        "date": "2026-06-15T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "I love the product but $68 every month is more than I can commit to right now. Cancel please.",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 7,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 14,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c023-t0"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c023-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c024",
+    "firstName": "Amelia",
+    "lastInitial": "T",
+    "createdAt": "2024-12-28T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c024-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 68
+      },
+      {
+        "id": "c024-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 72
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c024-t0",
+        "date": "2026-06-07T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "Cancel. I don't need this arriving every 30 days, I still have two unopened bottles.",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 7,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 12,
+      "unsubRisk": "high",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c024-t0"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c024-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c025",
+    "firstName": "Wren",
+    "lastInitial": "M",
+    "createdAt": "2025-10-03T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c025-o0",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      },
+      {
+        "id": "c025-o1",
+        "date": "2026-04-16T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 88
+      },
+      {
+        "id": "c025-o2",
+        "date": "2026-03-12T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 54
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c025-t0",
+        "date": "2026-06-15T13:55:11.620Z",
+        "theme": "subscription-cancel",
+        "subject": "Cancel my subscription",
+        "excerpt": "Please cancel — the price keeps going up and I can find the same ingredients cheaper elsewhere.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 29,
+      "unsubRisk": "high",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "subscription canceller",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c025-t0"
+          }
+        ]
+      },
+      {
+        "label": "price-sensitive",
+        "evidence": [
+          {
+            "type": "ticket",
+            "id": "c025-t0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "rich"
+  },
+  {
+    "id": "c026",
+    "firstName": "Riley",
+    "lastInitial": "T",
+    "createdAt": "2024-12-10T13:55:11.620Z",
+    "orders": [
+      {
+        "id": "c026-o0",
+        "date": "2026-06-30T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 163.2,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c026-o1",
+        "date": "2026-05-21T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 83.3,
+        "discountCode": "WELCOME15"
+      },
+      {
+        "id": "c026-o2",
+        "date": "2026-04-11T13:55:11.620Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 64.6,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c026-t0",
+        "date": "2026-07-01T13:55:11.620Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "Are there any active codes? I was about to check out and saw the total. A bit steep.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 10,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 11,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c026-o0"
+          },
+          {
+            "type": "order",
+            "id": "c026-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c027",
+    "firstName": "Sage",
+    "lastInitial": "C",
+    "createdAt": "2025-06-15T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c027-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c027-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 149.6,
+        "discountCode": "WELCOME15"
+      },
+      {
+        "id": "c027-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 73.1,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c027-o3",
+        "date": "2026-03-02T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 98.6,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 10,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 12,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c027-o0"
+          },
+          {
+            "type": "order",
+            "id": "c027-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c028",
+    "firstName": "Iris",
+    "lastInitial": "H",
+    "createdAt": "2026-03-11T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c028-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 90.1,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c028-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 83.3,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c028-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 153,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 11,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 8,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c028-o0"
+          },
+          {
+            "type": "order",
+            "id": "c028-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c029",
+    "firstName": "June",
+    "lastInitial": "R",
+    "createdAt": "2025-01-07T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c029-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 98.6,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c029-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 85,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c029-t0",
+        "date": "2026-06-09T13:55:11.621Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "Are there any active codes? I was about to check out and saw the total. A bit steep.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 9,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 7,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c029-o0"
+          },
+          {
+            "type": "order",
+            "id": "c029-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c030",
+    "firstName": "Theo",
+    "lastInitial": "B",
+    "createdAt": "2025-08-19T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c030-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 119,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c030-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 78.2,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c030-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 10,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c030-o0"
+          },
+          {
+            "type": "order",
+            "id": "c030-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c031",
+    "firstName": "Nina",
+    "lastInitial": "H",
+    "createdAt": "2026-01-08T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c031-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 37.4,
+        "discountCode": "WELCOME15"
+      },
+      {
+        "id": "c031-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 90.1,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c031-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 10,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 9,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c031-o0"
+          },
+          {
+            "type": "order",
+            "id": "c031-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c032",
+    "firstName": "Ellis",
+    "lastInitial": "H",
+    "createdAt": "2025-11-27T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c032-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 103.7,
+        "discountCode": "WELCOME15"
+      },
+      {
+        "id": "c032-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 183.6,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c032-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 102,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 12,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c032-o0"
+          },
+          {
+            "type": "order",
+            "id": "c032-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c033",
+    "firstName": "Rosa",
+    "lastInitial": "F",
+    "createdAt": "2025-12-19T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c033-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 153,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c033-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 56.1,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c033-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c033-o3",
+        "date": "2026-03-02T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 64.6,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c033-t0",
+        "date": "2026-07-02T13:55:11.621Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "Are there any active codes? I was about to check out and saw the total. A bit steep.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 12,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c033-o0"
+          },
+          {
+            "type": "order",
+            "id": "c033-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c034",
+    "firstName": "Kian",
+    "lastInitial": "N",
+    "createdAt": "2025-02-11T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c034-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c034-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 90.1,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c034-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 69.7,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 10,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c034-o0"
+          },
+          {
+            "type": "order",
+            "id": "c034-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c035",
+    "firstName": "Selah",
+    "lastInitial": "W",
+    "createdAt": "2026-02-18T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c035-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 90.1,
+        "discountCode": "WELCOME15"
+      },
+      {
+        "id": "c035-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c035-t0",
+        "date": "2026-06-25T13:55:11.621Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "Are there any active codes? I was about to check out and saw the total. A bit steep.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 9,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 7,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c035-o0"
+          },
+          {
+            "type": "order",
+            "id": "c035-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c036",
+    "firstName": "Cyrus",
+    "lastInitial": "P",
+    "createdAt": "2025-09-23T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c036-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 49.3,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c036-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 86.7,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c036-t0",
+        "date": "2026-07-05T13:55:11.621Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "First-time buyer here — is there a welcome discount I'm missing?",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 10,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c036-o0"
+          },
+          {
+            "type": "order",
+            "id": "c036-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c037",
+    "firstName": "Priya",
+    "lastInitial": "V",
+    "createdAt": "2025-07-15T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c037-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 45.9,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c037-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 49.3,
+        "discountCode": "FRIEND10"
+      },
+      {
+        "id": "c037-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 78.2,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c037-t0",
+        "date": "2026-06-07T13:55:11.621Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "Are there any active codes? I was about to check out and saw the total. A bit steep.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 10,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c037-o0"
+          },
+          {
+            "type": "order",
+            "id": "c037-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c038",
+    "firstName": "Ines",
+    "lastInitial": "M",
+    "createdAt": "2025-12-24T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c038-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 49.3,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c038-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 64.6,
+        "discountCode": "SPRING20"
+      },
+      {
+        "id": "c038-o2",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 73.1,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 13,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 2,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c038-o0"
+          },
+          {
+            "type": "order",
+            "id": "c038-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c039",
+    "firstName": "Anya",
+    "lastInitial": "S",
+    "createdAt": "2025-07-31T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c039-o0",
+        "date": "2026-06-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 76.5,
+        "discountCode": "WELCOME15"
+      },
+      {
+        "id": "c039-o1",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 125.8,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c039-t0",
+        "date": "2026-06-28T13:55:11.621Z",
+        "theme": "discount-request",
+        "subject": "Any discount codes?",
+        "excerpt": "Are there any active codes? I was about to check out and saw the total. A bit steep.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 8,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 10,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "discount-conditioned",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c039-o0"
+          },
+          {
+            "type": "order",
+            "id": "c039-o1"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c040",
+    "firstName": "Marisol",
+    "lastInitial": "J",
+    "createdAt": "2025-09-12T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c040-o0",
+        "date": "2026-05-10T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 148
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 58,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c040-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c041",
+    "firstName": "Devon",
+    "lastInitial": "M",
+    "createdAt": "2025-02-26T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c041-o0",
+        "date": "2026-04-14T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 274
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 56,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c041-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c042",
+    "firstName": "Aisha",
+    "lastInitial": "N",
+    "createdAt": "2025-05-20T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c042-o0",
+        "date": "2026-03-27T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 270
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 56,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c042-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c043",
+    "firstName": "Simone",
+    "lastInitial": "C",
+    "createdAt": "2025-04-23T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c043-o0",
+        "date": "2026-05-17T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 130.9,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 35,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c043-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c044",
+    "firstName": "Rina",
+    "lastInitial": "H",
+    "createdAt": "2026-02-14T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c044-o0",
+        "date": "2026-04-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 172
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 58,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c044-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c045",
+    "firstName": "Tomas",
+    "lastInitial": "B",
+    "createdAt": "2025-04-06T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c045-o0",
+        "date": "2026-05-14T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 124.1,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 39,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c045-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c046",
+    "firstName": "Yuki",
+    "lastInitial": "L",
+    "createdAt": "2026-01-30T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c046-o0",
+        "date": "2026-03-23T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 246
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 58,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c046-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c047",
+    "firstName": "Ines",
+    "lastInitial": "F",
+    "createdAt": "2026-03-31T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c047-o0",
+        "date": "2026-04-14T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 232
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 52,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c047-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c048",
+    "firstName": "Amara",
+    "lastInitial": "P",
+    "createdAt": "2025-06-09T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c048-o0",
+        "date": "2026-04-20T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 218
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 42,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c048-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c049",
+    "firstName": "Kofi",
+    "lastInitial": "G",
+    "createdAt": "2025-02-09T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c049-o0",
+        "date": "2026-05-13T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 122.4,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 55,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c049-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c050",
+    "firstName": "Maya",
+    "lastInitial": "D",
+    "createdAt": "2025-10-07T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c050-o0",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 114
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 46,
+      "unsubRisk": "med",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c050-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c051",
+    "firstName": "Jordan",
+    "lastInitial": "B",
+    "createdAt": "2025-12-31T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c051-o0",
+        "date": "2026-05-16T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 215.9,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 1,
+      "lastOpenDaysAgo": 47,
+      "unsubRisk": "med",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "med"
+    },
+    "traits": [
+      {
+        "label": "one-time gift buyer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c051-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c052",
+    "firstName": "Ava",
+    "lastInitial": "A",
+    "createdAt": "2024-12-29T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c052-o0",
+        "date": "2026-03-23T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 54
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 45,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c052-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c053",
+    "firstName": "Liam",
+    "lastInitial": "N",
+    "createdAt": "2026-03-27T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c053-o0",
+        "date": "2026-02-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 27,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c053-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c054",
+    "firstName": "Sofia",
+    "lastInitial": "D",
+    "createdAt": "2025-03-16T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c054-o0",
+        "date": "2026-02-17T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 154.7,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 58,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c054-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c055",
+    "firstName": "Noah",
+    "lastInitial": "K",
+    "createdAt": "2025-03-07T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c055-o0",
+        "date": "2026-03-05T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 37.4,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c055-t0",
+        "date": "2026-04-15T13:55:11.621Z",
+        "theme": "ingredient-question",
+        "subject": "Ingredient question",
+        "excerpt": "Is the Renew moisturizer fragrance-free? I'm pregnant and being careful. Site is unclear.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 21,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c055-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c056",
+    "firstName": "Emma",
+    "lastInitial": "B",
+    "createdAt": "2025-08-25T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c056-o0",
+        "date": "2026-03-31T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 51,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c056-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c057",
+    "firstName": "Ethan",
+    "lastInitial": "P",
+    "createdAt": "2025-05-01T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c057-o0",
+        "date": "2026-04-01T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 23,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c057-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c058",
+    "firstName": "Olivia",
+    "lastInitial": "B",
+    "createdAt": "2025-09-01T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c058-o0",
+        "date": "2026-04-16T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 44
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c058-t0",
+        "date": "2026-05-11T13:55:11.621Z",
+        "theme": "shade-mismatch",
+        "subject": "Wrong shade?",
+        "excerpt": "The tinted moisturizer looks nothing like the swatch on your site. Way too orange.",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 35,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c058-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c059",
+    "firstName": "Aiden",
+    "lastInitial": "T",
+    "createdAt": "2025-01-22T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c059-o0",
+        "date": "2026-03-11T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          }
+        ],
+        "total": 40.8,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 34,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c059-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c060",
+    "firstName": "Mia",
+    "lastInitial": "W",
+    "createdAt": "2026-01-05T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c060-o0",
+        "date": "2026-04-09T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 22,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c060-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c061",
+    "firstName": "Lucas",
+    "lastInitial": "P",
+    "createdAt": "2025-11-29T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c061-o0",
+        "date": "2026-04-20T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 45,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c061-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c062",
+    "firstName": "Zoe",
+    "lastInitial": "A",
+    "createdAt": "2025-11-25T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c062-o0",
+        "date": "2026-03-20T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 48,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c062-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c063",
+    "firstName": "Isaac",
+    "lastInitial": "H",
+    "createdAt": "2026-04-09T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c063-o0",
+        "date": "2026-02-16T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Overnight Repair Mask",
+            "price": 48
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 82
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c063-t0",
+        "date": "2026-04-13T13:55:11.621Z",
+        "theme": "ingredient-question",
+        "subject": "Ingredient question",
+        "excerpt": "Is the Renew moisturizer fragrance-free? I'm pregnant and being careful. Site is unclear.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 50,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c063-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c064",
+    "firstName": "Isla",
+    "lastInitial": "G",
+    "createdAt": "2025-01-22T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c064-o0",
+        "date": "2026-03-14T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 52,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c064-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c065",
+    "firstName": "Leo",
+    "lastInitial": "K",
+    "createdAt": "2025-09-15T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c065-o0",
+        "date": "2026-03-14T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 57.8,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 53,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c065-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c066",
+    "firstName": "Nora",
+    "lastInitial": "M",
+    "createdAt": "2026-02-04T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c066-o0",
+        "date": "2026-03-25T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 27.2,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 59,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c066-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c067",
+    "firstName": "Owen",
+    "lastInitial": "Z",
+    "createdAt": "2026-03-12T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c067-o0",
+        "date": "2026-02-05T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 23.8,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 25,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c067-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c068",
+    "firstName": "Elena",
+    "lastInitial": "C",
+    "createdAt": "2026-04-01T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c068-o0",
+        "date": "2026-04-25T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 28.9,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 39,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c068-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c069",
+    "firstName": "Kai",
+    "lastInitial": "F",
+    "createdAt": "2025-01-16T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c069-o0",
+        "date": "2026-02-19T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 125.8,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c069-t0",
+        "date": "2026-04-14T13:55:11.621Z",
+        "theme": "shade-mismatch",
+        "subject": "Wrong shade?",
+        "excerpt": "The tinted moisturizer looks nothing like the swatch on your site. Way too orange.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 42,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c069-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c070",
+    "firstName": "Harper",
+    "lastInitial": "D",
+    "createdAt": "2025-08-18T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c070-o0",
+        "date": "2026-02-08T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 112
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 23,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c070-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c071",
+    "firstName": "Mateo",
+    "lastInitial": "T",
+    "createdAt": "2025-10-22T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c071-o0",
+        "date": "2026-02-16T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 52.7,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 4,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 33,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c071-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c072",
+    "firstName": "Ruby",
+    "lastInitial": "W",
+    "createdAt": "2026-03-05T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c072-o0",
+        "date": "2026-03-24T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 28.9,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 45,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c072-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c073",
+    "firstName": "Miles",
+    "lastInitial": "C",
+    "createdAt": "2025-10-18T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c073-o0",
+        "date": "2026-02-20T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 30,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c073-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c074",
+    "firstName": "Amelia",
+    "lastInitial": "H",
+    "createdAt": "2025-12-27T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c074-o0",
+        "date": "2026-04-20T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 51,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c074-t0",
+        "date": "2026-03-15T13:55:11.621Z",
+        "theme": "shade-mismatch",
+        "subject": "Wrong shade?",
+        "excerpt": "The tinted moisturizer looks nothing like the swatch on your site. Way too orange.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 35,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c074-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c075",
+    "firstName": "Wren",
+    "lastInitial": "F",
+    "createdAt": "2026-03-15T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c075-o0",
+        "date": "2026-03-07T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 154.7,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 30,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c075-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c076",
+    "firstName": "Riley",
+    "lastInitial": "R",
+    "createdAt": "2024-12-23T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c076-o0",
+        "date": "2026-02-03T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 23,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c076-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c077",
+    "firstName": "Sage",
+    "lastInitial": "G",
+    "createdAt": "2025-08-28T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c077-o0",
+        "date": "2026-02-25T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 28.9,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 52,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c077-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c078",
+    "firstName": "Iris",
+    "lastInitial": "H",
+    "createdAt": "2025-02-15T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c078-o0",
+        "date": "2026-03-19T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 26,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c078-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c079",
+    "firstName": "June",
+    "lastInitial": "D",
+    "createdAt": "2025-09-24T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c079-o0",
+        "date": "2026-04-25T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 86
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c079-t0",
+        "date": "2026-03-26T13:55:11.621Z",
+        "theme": "ingredient-question",
+        "subject": "Ingredient question",
+        "excerpt": "Is the Renew moisturizer fragrance-free? I'm pregnant and being careful. Site is unclear.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 47,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c079-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c080",
+    "firstName": "Theo",
+    "lastInitial": "P",
+    "createdAt": "2025-01-21T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c080-o0",
+        "date": "2026-03-05T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 51,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c080-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c081",
+    "firstName": "Nina",
+    "lastInitial": "C",
+    "createdAt": "2026-03-25T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c081-o0",
+        "date": "2026-03-03T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 62
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 39,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c081-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c082",
+    "firstName": "Ellis",
+    "lastInitial": "N",
+    "createdAt": "2026-03-19T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c082-o0",
+        "date": "2026-04-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 57.8,
+        "discountCode": "FRIEND10"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 59,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c082-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c083",
+    "firstName": "Rosa",
+    "lastInitial": "K",
+    "createdAt": "2025-12-12T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c083-o0",
+        "date": "2026-02-07T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 90
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 58,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c083-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c084",
+    "firstName": "Kian",
+    "lastInitial": "B",
+    "createdAt": "2025-11-14T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c084-o0",
+        "date": "2026-03-08T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 153,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 47,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c084-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c085",
+    "firstName": "Selah",
+    "lastInitial": "M",
+    "createdAt": "2025-12-19T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c085-o0",
+        "date": "2026-03-26T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 122
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 2,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 40,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c085-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c086",
+    "firstName": "Cyrus",
+    "lastInitial": "M",
+    "createdAt": "2025-03-11T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c086-o0",
+        "date": "2026-04-30T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 61.2,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c086-t0",
+        "date": "2026-04-26T13:55:11.621Z",
+        "theme": "shade-mismatch",
+        "subject": "Wrong shade?",
+        "excerpt": "I ordered 'Rose' and got something that reads pink under any light. Can I exchange?",
+        "resolved": false
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 3,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 51,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c086-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c087",
+    "firstName": "Priya",
+    "lastInitial": "V",
+    "createdAt": "2025-09-28T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c087-o0",
+        "date": "2026-01-28T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          }
+        ],
+        "total": 45.9,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [
+      {
+        "id": "c087-t0",
+        "date": "2026-04-30T13:55:11.621Z",
+        "theme": "ingredient-question",
+        "subject": "Ingredient question",
+        "excerpt": "Is the Renew moisturizer fragrance-free? I'm pregnant and being careful. Site is unclear.",
+        "resolved": true
+      }
+    ],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 49,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c087-o0"
+          }
+        ]
+      },
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c088",
+    "firstName": "Ines",
+    "lastInitial": "R",
+    "createdAt": "2025-05-29T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c088-o0",
+        "date": "2026-01-24T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 37.4,
+        "discountCode": "SPRING20"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 32,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c088-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c089",
+    "firstName": "Anya",
+    "lastInitial": "F",
+    "createdAt": "2025-09-14T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c089-o0",
+        "date": "2026-04-26T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          }
+        ],
+        "total": 183.6,
+        "discountCode": "WELCOME15"
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 5,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 35,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "lapsed first-timer",
+        "evidence": [
+          {
+            "type": "order",
+            "id": "c089-o0"
+          }
+        ]
+      }
+    ],
+    "groundingQuality": "medium"
+  },
+  {
+    "id": "c090",
+    "firstName": "Marisol",
+    "lastInitial": "B",
+    "createdAt": "2026-03-20T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 15,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 5,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c091",
+    "firstName": "Devon",
+    "lastInitial": "K",
+    "createdAt": "2025-06-08T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c091-o0",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 92
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 6,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c092",
+    "firstName": "Aisha",
+    "lastInitial": "J",
+    "createdAt": "2025-08-26T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c093",
+    "firstName": "Simone",
+    "lastInitial": "L",
+    "createdAt": "2025-06-04T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 14,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c094",
+    "firstName": "Rina",
+    "lastInitial": "T",
+    "createdAt": "2025-11-12T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 14,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 3,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c095",
+    "firstName": "Tomas",
+    "lastInitial": "W",
+    "createdAt": "2025-07-07T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c095-o0",
+        "date": "2026-05-15T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 72
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 15,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 5,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c096",
+    "firstName": "Yuki",
+    "lastInitial": "B",
+    "createdAt": "2025-01-14T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c096-o0",
+        "date": "2026-05-24T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 44
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 19,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 6,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c097",
+    "firstName": "Ines",
+    "lastInitial": "W",
+    "createdAt": "2025-10-19T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 16,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c098",
+    "firstName": "Amara",
+    "lastInitial": "H",
+    "createdAt": "2025-12-05T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c098-o0",
+        "date": "2026-05-16T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          },
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 130
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 19,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c099",
+    "firstName": "Kofi",
+    "lastInitial": "H",
+    "createdAt": "2025-12-12T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c099-o0",
+        "date": "2026-05-09T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Bloom Cleanser",
+            "price": 32
+          }
+        ],
+        "total": 32
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 17,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c100",
+    "firstName": "Maya",
+    "lastInitial": "C",
+    "createdAt": "2025-06-04T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 5,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c101",
+    "firstName": "Jordan",
+    "lastInitial": "T",
+    "createdAt": "2025-04-19T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c101-o0",
+        "date": "2026-05-28T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 28
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 15,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 6,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c102",
+    "firstName": "Ava",
+    "lastInitial": "L",
+    "createdAt": "2024-12-18T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 16,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c103",
+    "firstName": "Liam",
+    "lastInitial": "T",
+    "createdAt": "2026-03-26T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c104",
+    "firstName": "Sofia",
+    "lastInitial": "Z",
+    "createdAt": "2026-03-11T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 18,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 3,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c105",
+    "firstName": "Noah",
+    "lastInitial": "Z",
+    "createdAt": "2025-11-18T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 17,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c106",
+    "firstName": "Emma",
+    "lastInitial": "F",
+    "createdAt": "2025-12-16T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c106-o0",
+        "date": "2026-05-18T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Vitamin C Elixir",
+            "price": 72
+          }
+        ],
+        "total": 72
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 16,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 5,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c107",
+    "firstName": "Ethan",
+    "lastInitial": "D",
+    "createdAt": "2025-02-02T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c107-o0",
+        "date": "2026-05-24T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Ritual Serum 30ml",
+            "price": 68
+          },
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 216
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 18,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c108",
+    "firstName": "Olivia",
+    "lastInitial": "T",
+    "createdAt": "2025-04-05T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 16,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c109",
+    "firstName": "Aiden",
+    "lastInitial": "S",
+    "createdAt": "2025-07-01T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c109-o0",
+        "date": "2026-05-15T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 44
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 15,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c110",
+    "firstName": "Mia",
+    "lastInitial": "C",
+    "createdAt": "2025-12-08T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c110-o0",
+        "date": "2026-05-07T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          }
+        ],
+        "total": 148
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 15,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c111",
+    "firstName": "Lucas",
+    "lastInitial": "D",
+    "createdAt": "2024-12-29T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c111-o0",
+        "date": "2026-05-17T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Renew Moisturizer",
+            "price": 54
+          },
+          {
+            "name": "Petal Toner",
+            "price": 28
+          }
+        ],
+        "total": 82
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c112",
+    "firstName": "Zoe",
+    "lastInitial": "B",
+    "createdAt": "2025-09-01T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c113",
+    "firstName": "Isaac",
+    "lastInitial": "C",
+    "createdAt": "2026-01-17T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c113-o0",
+        "date": "2026-05-25T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 34
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 12,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 5,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c114",
+    "firstName": "Isla",
+    "lastInitial": "P",
+    "createdAt": "2025-10-16T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c114-o0",
+        "date": "2026-05-12T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Refill: Serum 100ml",
+            "price": 148
+          },
+          {
+            "name": "Silk SPF 30",
+            "price": 44
+          }
+        ],
+        "total": 192
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 6,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c115",
+    "firstName": "Leo",
+    "lastInitial": "D",
+    "createdAt": "2025-09-28T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 3,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c116",
+    "firstName": "Nora",
+    "lastInitial": "T",
+    "createdAt": "2026-02-10T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c116-o0",
+        "date": "2026-05-21T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Petal Toner",
+            "price": 28
+          },
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 86
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 19,
+      "clicksLast90d": 3,
+      "lastOpenDaysAgo": 2,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c117",
+    "firstName": "Owen",
+    "lastInitial": "B",
+    "createdAt": "2026-03-07T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 19,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 3,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c118",
+    "firstName": "Elena",
+    "lastInitial": "G",
+    "createdAt": "2026-01-18T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c118-o0",
+        "date": "2026-06-08T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Botanical Eye Cream",
+            "price": 58
+          }
+        ],
+        "total": 58
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 19,
+      "clicksLast90d": 2,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": true,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c119",
+    "firstName": "Kai",
+    "lastInitial": "W",
+    "createdAt": "2025-02-22T13:55:11.621Z",
+    "orders": [
+      {
+        "id": "c119-o0",
+        "date": "2026-05-04T13:55:11.621Z",
+        "items": [
+          {
+            "name": "Wellness Gummies (30ct)",
+            "price": 34
+          }
+        ],
+        "total": 34
+      }
+    ],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 13,
+      "clicksLast90d": 4,
+      "lastOpenDaysAgo": 4,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 1,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c120",
+    "firstName": "Harper",
+    "lastInitial": "Z",
+    "createdAt": "2025-01-21T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 67,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c121",
+    "firstName": "Mateo",
+    "lastInitial": "L",
+    "createdAt": "2025-01-19T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 84,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c122",
+    "firstName": "Ruby",
+    "lastInitial": "L",
+    "createdAt": "2026-04-05T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 69,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c123",
+    "firstName": "Miles",
+    "lastInitial": "J",
+    "createdAt": "2025-08-23T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 65,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c124",
+    "firstName": "Amelia",
+    "lastInitial": "W",
+    "createdAt": "2025-01-02T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 98,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c125",
+    "firstName": "Wren",
+    "lastInitial": "L",
+    "createdAt": "2026-03-01T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 69,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c126",
+    "firstName": "Riley",
+    "lastInitial": "W",
+    "createdAt": "2025-05-07T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 65,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c127",
+    "firstName": "Sage",
+    "lastInitial": "F",
+    "createdAt": "2025-06-14T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 78,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c128",
+    "firstName": "Iris",
+    "lastInitial": "A",
+    "createdAt": "2026-01-29T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 65,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c129",
+    "firstName": "June",
+    "lastInitial": "Z",
+    "createdAt": "2025-03-26T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 83,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c130",
+    "firstName": "Theo",
+    "lastInitial": "V",
+    "createdAt": "2025-05-20T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 99,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c131",
+    "firstName": "Nina",
+    "lastInitial": "T",
+    "createdAt": "2025-05-31T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 63,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c132",
+    "firstName": "Ellis",
+    "lastInitial": "C",
+    "createdAt": "2026-01-12T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 82,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c133",
+    "firstName": "Rosa",
+    "lastInitial": "D",
+    "createdAt": "2025-09-27T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 83,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c134",
+    "firstName": "Kian",
+    "lastInitial": "T",
+    "createdAt": "2025-08-13T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 81,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c135",
+    "firstName": "Selah",
+    "lastInitial": "Z",
+    "createdAt": "2025-06-28T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 87,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c136",
+    "firstName": "Cyrus",
+    "lastInitial": "K",
+    "createdAt": "2025-01-16T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 87,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c137",
+    "firstName": "Priya",
+    "lastInitial": "G",
+    "createdAt": "2025-05-01T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 88,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c138",
+    "firstName": "Ines",
+    "lastInitial": "L",
+    "createdAt": "2025-02-18T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 77,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c139",
+    "firstName": "Anya",
+    "lastInitial": "M",
+    "createdAt": "2025-03-20T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 89,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c140",
+    "firstName": "Marisol",
+    "lastInitial": "H",
+    "createdAt": "2026-03-21T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 76,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c141",
+    "firstName": "Devon",
+    "lastInitial": "G",
+    "createdAt": "2025-04-15T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 87,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c142",
+    "firstName": "Aisha",
+    "lastInitial": "N",
+    "createdAt": "2026-03-09T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 73,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c143",
+    "firstName": "Simone",
+    "lastInitial": "V",
+    "createdAt": "2025-06-11T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 66,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c144",
+    "firstName": "Rina",
+    "lastInitial": "L",
+    "createdAt": "2026-04-05T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 87,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c145",
+    "firstName": "Tomas",
+    "lastInitial": "C",
+    "createdAt": "2026-04-19T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 79,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c146",
+    "firstName": "Yuki",
+    "lastInitial": "P",
+    "createdAt": "2025-03-06T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 67,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c147",
+    "firstName": "Ines",
+    "lastInitial": "V",
+    "createdAt": "2025-08-11T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 1,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 66,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c148",
+    "firstName": "Amara",
+    "lastInitial": "T",
+    "createdAt": "2025-06-21T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 60,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  },
+  {
+    "id": "c149",
+    "firstName": "Kofi",
+    "lastInitial": "A",
+    "createdAt": "2025-02-23T13:55:11.621Z",
+    "orders": [],
+    "tickets": [],
+    "engagement": {
+      "opensLast90d": 0,
+      "clicksLast90d": 0,
+      "lastOpenDaysAgo": 84,
+      "unsubRisk": "low",
+      "smsOptedIn": false,
+      "smsClicksLast90d": 0,
+      "smsOptOutRisk": "low"
+    },
+    "traits": [
+      {
+        "label": "fatigued",
+        "evidence": []
+      }
+    ],
+    "groundingQuality": "thin"
+  }
+]

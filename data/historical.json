@@ -1,0 +1,187 @@
+[
+  {
+    "id": "hc1",
+    "name": "Winter Winback '25",
+    "tags": [
+      "winback"
+    ],
+    "sentAt": "2026-07-05T13:55:11.625Z",
+    "audienceGroupId": "ag-lapsed-first",
+    "performanceIndex": 62,
+    "outcome": {
+      "openRate": 0.28,
+      "clickRate": 0.041,
+      "unsubs": 6
+    }
+  },
+  {
+    "id": "hc2",
+    "name": "New Year, New Skin",
+    "tags": [
+      "launch",
+      "newsletter"
+    ],
+    "sentAt": "2026-06-27T13:55:11.625Z",
+    "audienceGroupId": "ag-loyalists",
+    "performanceIndex": 78,
+    "outcome": {
+      "openRate": 0.34,
+      "clickRate": 0.068,
+      "unsubs": 4
+    }
+  },
+  {
+    "id": "hc3",
+    "name": "Valentine's Gift Guide",
+    "tags": [
+      "promo",
+      "newsletter"
+    ],
+    "sentAt": "2026-06-19T13:55:11.625Z",
+    "audienceGroupId": "ag-vip",
+    "performanceIndex": 71,
+    "outcome": {
+      "openRate": 0.32,
+      "clickRate": 0.055,
+      "unsubs": 5
+    }
+  },
+  {
+    "id": "hc4",
+    "name": "Serum Restock",
+    "tags": [
+      "newsletter"
+    ],
+    "sentAt": "2026-06-11T13:55:11.625Z",
+    "audienceGroupId": "ag-loyalists",
+    "performanceIndex": 55,
+    "outcome": {
+      "openRate": 0.25,
+      "clickRate": 0.03,
+      "unsubs": 3
+    }
+  },
+  {
+    "id": "hc5",
+    "name": "Save your subscription 20%",
+    "tags": [
+      "winback",
+      "promo"
+    ],
+    "sentAt": "2026-06-03T13:55:11.625Z",
+    "audienceGroupId": "ag-sub-cancellers",
+    "performanceIndex": 44,
+    "outcome": {
+      "openRate": 0.21,
+      "clickRate": 0.024,
+      "unsubs": 12
+    }
+  },
+  {
+    "id": "hc6",
+    "name": "Spring Refresh Preview",
+    "tags": [
+      "launch"
+    ],
+    "sentAt": "2026-05-26T13:55:11.625Z",
+    "audienceGroupId": "ag-vip",
+    "performanceIndex": 83,
+    "outcome": {
+      "openRate": 0.39,
+      "clickRate": 0.082,
+      "unsubs": 3
+    }
+  },
+  {
+    "id": "hc7",
+    "name": "Weekly digest #12",
+    "tags": [
+      "newsletter"
+    ],
+    "sentAt": "2026-05-18T13:55:11.625Z",
+    "audienceGroupId": "ag-loyalists",
+    "performanceIndex": 48,
+    "outcome": {
+      "openRate": 0.23,
+      "clickRate": 0.028,
+      "unsubs": 4
+    }
+  },
+  {
+    "id": "hc8",
+    "name": "Bloom Cleanser launch",
+    "tags": [
+      "launch"
+    ],
+    "sentAt": "2026-05-10T13:55:11.625Z",
+    "audienceGroupId": "ag-vip",
+    "performanceIndex": 88,
+    "outcome": {
+      "openRate": 0.41,
+      "clickRate": 0.091,
+      "unsubs": 2
+    }
+  },
+  {
+    "id": "hc9",
+    "name": "Come back — 15% off",
+    "tags": [
+      "winback",
+      "promo"
+    ],
+    "sentAt": "2026-05-02T13:55:11.625Z",
+    "audienceGroupId": "ag-lapsed-first",
+    "performanceIndex": 58,
+    "outcome": {
+      "openRate": 0.27,
+      "clickRate": 0.038,
+      "unsubs": 8
+    }
+  },
+  {
+    "id": "hc10",
+    "name": "Sunscreen season",
+    "tags": [
+      "newsletter",
+      "launch"
+    ],
+    "sentAt": "2026-04-24T13:55:11.625Z",
+    "audienceGroupId": "ag-loyalists",
+    "performanceIndex": 66,
+    "outcome": {
+      "openRate": 0.3,
+      "clickRate": 0.049,
+      "unsubs": 4
+    }
+  },
+  {
+    "id": "hc11",
+    "name": "Members-only preview",
+    "tags": [
+      "newsletter"
+    ],
+    "sentAt": "2026-04-16T13:55:11.625Z",
+    "audienceGroupId": "ag-vip",
+    "performanceIndex": 75,
+    "outcome": {
+      "openRate": 0.35,
+      "clickRate": 0.062,
+      "unsubs": 3
+    }
+  },
+  {
+    "id": "hc12",
+    "name": "Reactivation — last shot",
+    "tags": [
+      "winback"
+    ],
+    "sentAt": "2026-04-08T13:55:11.625Z",
+    "audienceGroupId": "ag-lapsed-first",
+    "performanceIndex": 39,
+    "outcome": {
+      "openRate": 0.18,
+      "clickRate": 0.019,
+      "unsubs": 15
+    }
+  }
+]

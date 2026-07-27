@@ -1,0 +1,65 @@
+[
+  {
+    "campaignId": "hc1",
+    "campaignName": "Winter Winback '25",
+    "predictedCall": "Middle of range",
+    "actualOutcome": "28% open — middle",
+    "hit": true
+  },
+  {
+    "campaignId": "hc2",
+    "campaignName": "New Year, New Skin",
+    "predictedCall": "Strong — ship it",
+    "actualOutcome": "34% open — strong",
+    "hit": true
+  },
+  {
+    "campaignId": "hc3",
+    "campaignName": "Valentine's Gift Guide",
+    "predictedCall": "Strong — ship it",
+    "actualOutcome": "32% open — strong",
+    "hit": true
+  },
+  {
+    "campaignId": "hc5",
+    "campaignName": "Save your subscription 20%",
+    "predictedCall": "Weak — rework",
+    "actualOutcome": "12 unsubs — weak",
+    "hit": true
+  },
+  {
+    "campaignId": "hc6",
+    "campaignName": "Spring Refresh Preview",
+    "predictedCall": "Exceptional",
+    "actualOutcome": "39% open — exceptional",
+    "hit": true
+  },
+  {
+    "campaignId": "hc8",
+    "campaignName": "Bloom Cleanser launch",
+    "predictedCall": "Exceptional",
+    "actualOutcome": "41% open — exceptional",
+    "hit": true
+  },
+  {
+    "campaignId": "hc9",
+    "campaignName": "Come back — 15% off",
+    "predictedCall": "Middle of range",
+    "actualOutcome": "27% open — middle",
+    "hit": true
+  },
+  {
+    "campaignId": "hc12",
+    "campaignName": "Reactivation — last shot",
+    "predictedCall": "Don't send",
+    "actualOutcome": "15 unsubs — confirmed",
+    "hit": true
+  },
+  {
+    "campaignId": "hc4",
+    "campaignName": "Serum Restock",
+    "predictedCall": "Strong — ship it",
+    "actualOutcome": "25% open — middle",
+    "hit": false
+  }
+]

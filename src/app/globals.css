@@ -1,0 +1,339 @@
+@import "tailwindcss";
+
+:root {
+  --background: #f7f7f6;
+  --foreground: #0a0a0a;
+  --surface: #ffffff;
+  --border: #ececec;
+  --border-strong: #d4d4d4;
+  --muted: #6b7280;
+  --muted-2: #a1a1a1;
+  --accent: #0a0a0a;      /* near-black primary, like the reference */
+  --accent-fg: #ffffff;
+  --accent-soft: #f3f3f2;
+  --accent-outline: #171717;
+  --highlight: #7c3aed;   /* violet reserved for score / status highlights */
+  --highlight-soft: #f5f3ff;
+  --danger: #dc2626;
+  --danger-soft: #fef2f2;
+  --warn: #b45309;
+  --warn-soft: #fdf6e3;
+  --success: #047857;
+  --success-soft: #ecfdf5;
+
+  /* dark header */
+  --shell: #0a0a0a;
+  --shell-fg: #f4f4f4;
+  --shell-muted: #a3a3a3;
+  --shell-border: #262626;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-surface: var(--surface);
+  --color-border: var(--border);
+  --color-muted: var(--muted);
+  --color-muted-2: var(--muted-2);
+  --color-accent: var(--accent);
+  --color-accent-fg: var(--accent-fg);
+  --color-accent-soft: var(--accent-soft);
+  --color-highlight: var(--highlight);
+  --color-highlight-soft: var(--highlight-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
+  --color-warn: var(--warn);
+  --color-warn-soft: var(--warn-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-shell: var(--shell);
+  --color-shell-fg: var(--shell-fg);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-sans), ui-sans-serif, system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  font-feature-settings: "cv11", "ss03", "ss04";
+}
+
+/* Utility bits */
+.card {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+}
+.card-flat {
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+.chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 500;
+  background: #f3f3f2;
+  color: #262626;
+  border: 1px solid var(--border);
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+.chip-accent { background: var(--foreground); color: var(--accent-fg); border-color: var(--foreground); }
+.chip-highlight { background: var(--highlight-soft); color: var(--highlight); border-color: color-mix(in oklab, var(--highlight) 25%, white); }
+.chip-warn { background: var(--warn-soft); color: var(--warn); border-color: color-mix(in oklab, var(--warn) 30%, white); }
+.chip-danger { background: var(--danger-soft); color: var(--danger); border-color: color-mix(in oklab, var(--danger) 25%, white); }
+.chip-success { background: var(--success-soft); color: var(--success); border-color: color-mix(in oklab, var(--success) 25%, white); }
+
+/* Dotted canvas — reference-style background for flow / preview surfaces */
+.canvas-dots {
+  background-color: var(--background);
+  background-image: radial-gradient(circle, #d4d4d4 1px, transparent 1px);
+  background-size: 20px 20px;
+  background-position: 0 0;
+}
+.canvas-dots-tight {
+  background-color: var(--background);
+  background-image: radial-gradient(circle, #dcdcdc 1px, transparent 1px);
+  background-size: 14px 14px;
+}
+
+/* Section rule / eyebrow labels */
+.eyebrow {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  font-weight: 500;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 8px 14px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid transparent;
+  transition: background 120ms, border-color 120ms, transform 60ms;
+  cursor: pointer;
+  white-space: nowrap;
+}
+.btn:disabled { opacity: 0.5; cursor: not-allowed; }
+.btn-primary { background: var(--accent); color: var(--accent-fg); box-shadow: 0 1px 0 rgba(0,0,0,0.06), 0 0 0 1px rgba(0,0,0,0.08); }
+.btn-primary:hover:not(:disabled) { background: #262626; }
+.btn-secondary { background: white; color: var(--foreground); border-color: var(--border); }
+.btn-secondary:hover:not(:disabled) { background: #f9fafb; }
+.btn-ghost { background: transparent; color: var(--foreground); }
+.btn-ghost:hover:not(:disabled) { background: #f3f4f6; }
+.btn-danger { background: white; color: var(--danger); border-color: color-mix(in oklab, var(--danger) 20%, white); }
+.btn-danger:hover:not(:disabled) { background: var(--danger-soft); }
+
+/* Text-like inputs — checkboxes/radios keep native sizing */
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]),
+textarea,
+select {
+  background: white;
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 8px 12px;
+  font-size: 14px;
+  outline: none;
+  color: var(--foreground);
+  width: 100%;
+}
+input:not([type="checkbox"]):not([type="radio"]):not([type="range"]):focus,
+textarea:focus,
+select:focus {
+  border-color: var(--accent);
+  box-shadow: 0 0 0 3px color-mix(in oklab, var(--accent) 15%, white);
+}
+input[type="checkbox"], input[type="radio"] {
+  accent-color: var(--accent);
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  cursor: pointer;
+}
+label { font-size: 12px; font-weight: 500; color: var(--muted); display: block; margin-bottom: 4px; }
+
+/* Score ring */
+.score-ring {
+  --p: 50;
+  --c: var(--accent);
+  background:
+    conic-gradient(var(--c) calc(var(--p) * 1%), #eef2ff 0);
+  border-radius: 999px;
+  display: grid;
+  place-items: center;
+  position: relative;
+}
+.score-ring::before {
+  content: "";
+  position: absolute;
+  inset: 8px;
+  background: white;
+  border-radius: 999px;
+}
+
+/* Twin avatar states */
+.avatar-pending { background: #f3f4f6; color: transparent; }
+.avatar-open_click { background: color-mix(in oklab, var(--success) 25%, white); color: var(--success); }
+.avatar-open_ignore { background: color-mix(in oklab, var(--warn) 22%, white); color: var(--warn); }
+.avatar-ignore { background: #e5e7eb; color: #6b7280; }
+.avatar-unsubscribe { background: color-mix(in oklab, var(--danger) 25%, white); color: var(--danger); }
+.avatar-spam { background: color-mix(in oklab, var(--danger) 40%, white); color: white; }
+
+/* subtle slide-over */
+.slideover {
+  position: fixed; inset: 0; z-index: 50;
+  display: grid; grid-template-columns: 1fr;
+}
+.slideover-backdrop {
+  position: absolute; inset: 0; background: rgba(15, 23, 42, 0.35);
+  animation: fadein 120ms ease-out;
+}
+.slideover-panel {
+  position: absolute; right: 0; top: 0; bottom: 0;
+  background: white; border-left: 1px solid var(--border);
+  width: min(720px, 100%);
+  box-shadow: -20px 0 40px -20px rgba(15,23,42,0.15);
+  overflow-y: auto;
+  animation: slidein 220ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+@keyframes fadein { from { opacity: 0 } to { opacity: 1 } }
+@keyframes slidein { from { transform: translateX(30px); opacity: 0 } to { transform: none; opacity: 1 } }
+@keyframes composerin { from { opacity: 0; transform: translateY(6px) } to { opacity: 1; transform: none } }
+
+/* prose */
+.prose-sm p { margin-bottom: 8px; }
+.prose-sm { line-height: 1.55; color: #374151; }
+
+hr { border: none; border-top: 1px solid var(--border); margin: 16px 0; }
+
+/* Heatmap cell */
+.heat-cell {
+  display: grid; place-items: center;
+  aspect-ratio: 1; border-radius: 6px;
+  font-size: 11px; font-weight: 500;
+  cursor: pointer; transition: transform 80ms;
+}
+.heat-cell:hover { transform: scale(1.05); z-index: 1; }
+
+::selection { background: color-mix(in oklab, var(--accent) 25%, white); }
+
+/* ------------------------------------------------------------------ */
+/*  [data-ui="v2"] — scoped design-language pass for the app's        */
+/*  sidebar and any surface that opts into the v2 palette.            */
+/* ------------------------------------------------------------------ */
+[data-ui="v2"] {
+  --background: #fafafa;
+  --surface: #ffffff;
+  --sidebar-bg: #f5f5f5;
+  --sidebar-hover: #ebebeb;
+  --sidebar-active: #ebebeb;
+  --border: #ececec;
+  --border-strong: #d4d4d4;
+  --muted: #6b7280;
+  --muted-2: #9ca3af;
+  --accent: #0a0a0a;
+  --accent-fg: #ffffff;
+  --accent-soft: #f5f5f4;
+  --highlight: #334155;   /* replace violet with slate on v2 */
+  --highlight-soft: #eff3f7;
+  --chip-success-bg: #eaf6ef;
+  --chip-success-fg: #116534;
+  --chip-info-bg:    #eff3f7;
+  --chip-info-fg:    #334155;
+  --chip-warn-bg:    #fef7e3;
+  --chip-warn-fg:    #8a5b00;
+  --chip-danger-bg:  #fdecec;
+  --chip-danger-fg:  #9b1c1c;
+  --chip-neutral-bg: #f2f2f0;
+  --chip-neutral-fg: #4b5563;
+  --table-head-bg:   #fafafa;
+  --row-hover:       #fafafa;
+}
+
+/* Tag chips — squared corners, no borders, pastel bg + darker matching fg. */
+[data-ui="v2"] .chip {
+  border: none;
+  background: var(--chip-neutral-bg);
+  color: var(--chip-neutral-fg);
+  padding: 3px 8px;
+  font-size: 11px;
+  font-weight: 500;
+  border-radius: 5px;
+}
+[data-ui="v2"] .chip-success  { background: var(--chip-success-bg); color: var(--chip-success-fg); }
+[data-ui="v2"] .chip-info     { background: var(--chip-info-bg);    color: var(--chip-info-fg); }
+[data-ui="v2"] .chip-warn     { background: var(--chip-warn-bg);    color: var(--chip-warn-fg); }
+[data-ui="v2"] .chip-danger   { background: var(--chip-danger-bg);  color: var(--chip-danger-fg); }
+[data-ui="v2"] .chip-neutral  { background: var(--chip-neutral-bg); color: var(--chip-neutral-fg); }
+/* Legacy modifiers remap onto the new pastel palette. */
+[data-ui="v2"] .chip-highlight { background: var(--chip-info-bg);    color: var(--chip-info-fg); }
+[data-ui="v2"] .chip-accent    { background: var(--chip-neutral-bg); color: var(--chip-neutral-fg); }
+
+/* Cards — softer border, still rounded. */
+[data-ui="v2"] .card {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+}
+[data-ui="v2"] .card-flat {
+  background: #ffffff;
+  border: 1px solid var(--border);
+  border-radius: 10px;
+}
+
+/* Buttons — secondary drops its border, uses warm-gray fill. */
+[data-ui="v2"] .btn-secondary {
+  background: #f5f5f4;
+  color: var(--foreground);
+  border-color: transparent;
+  box-shadow: none;
+}
+[data-ui="v2"] .btn-secondary:hover:not(:disabled) { background: #eceae7; }
+[data-ui="v2"] .btn-ghost {
+  background: transparent;
+  color: var(--foreground);
+  border-color: transparent;
+}
+[data-ui="v2"] .btn-ghost:hover:not(:disabled) { background: #f2f2f0; }
+
+/* Tables — headers on light-gray tint, uppercase muted text. */
+[data-ui="v2"] .v2-table thead tr {
+  border-bottom: 1px solid var(--border);
+}
+[data-ui="v2"] .v2-table thead th {
+  font-size: 12px;
+  color: var(--muted);
+  font-weight: 400;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+[data-ui="v2"] .v2-table tbody tr { border-top: 1px solid #f2f2f2; }
+[data-ui="v2"] .v2-table tbody tr:first-child { border-top: none; }
+[data-ui="v2"] .v2-table tbody tr:hover { background: var(--row-hover); }
+
+/* Section label / eyebrow tightening. */
+[data-ui="v2"] .eyebrow {
+  font-size: 10.5px;
+  font-weight: 500;
+  letter-spacing: 0.06em;
+  color: var(--muted);
+  text-transform: uppercase;
+}
+
+/* v2 body should sit on white, not the app-wide off-white. */
+[data-ui="v2"] {
+  background: var(--background);
+  color: var(--foreground);
+}
