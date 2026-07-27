@@ -1,5 +1,5 @@
 import { NextRequest, NextResponse } from "next/server";
-import { getAudienceGroups, getCustomers, saveAudienceGroup } from "@/lib/store";
+import { deleteAudienceGroup, getAudienceGroups, getCustomers, saveAudienceGroup } from "@/lib/store";
 import type { AudienceGroup } from "@/lib/types";
 
 export const runtime = "nodejs";
@@ -35,4 +35,13 @@ export async function POST(req: NextRequest) {
   };
   await saveAudienceGroup(group);
   return NextResponse.json(group);
+}
+
+/** Counterpart to POST. `deleteAudienceGroup` already existed in the store but
+ *  nothing was wired to it, so a group could be created and never removed. */
+export async function DELETE(req: NextRequest) {
+  const id = new URL(req.url).searchParams.get("id");
+  if (!id) return NextResponse.json({ error: "id required" }, { status: 400 });
+  await deleteAudienceGroup(id);
+  return NextResponse.json({ ok: true });
 }
