@@ -18,12 +18,12 @@ export default async function CampaignPage(props: {
 }) {
   const { id } = await props.params;
   const search = await props.searchParams;
-  const campaign = getCampaign(id);
+  const campaign = await getCampaign(id);
   if (!campaign) return notFound();
-  const audience = getAudienceGroup(campaign.audienceGroupId);
-  const eligible = estimatedEligibleCount(campaign);
-  const latest = getLatestRehearsal(campaign.id);
-  const runs = getRehearsals()
+  const audience = await getAudienceGroup(campaign.audienceGroupId);
+  const eligible = await estimatedEligibleCount(campaign);
+  const latest = await getLatestRehearsal(campaign.id);
+  const runs = (await getRehearsals())
     .filter((r) => r.campaignId === campaign.id)
     .sort((a, b) => b.ranAt.localeCompare(a.ranAt));
   const customers = getCustomers();

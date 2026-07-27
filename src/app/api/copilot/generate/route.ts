@@ -22,7 +22,7 @@ export async function POST(req: NextRequest) {
     campaignId: string;
     mode: "initial" | "modify";
   };
-  const campaign = getCampaign(campaignId);
+  const campaign = await getCampaign(campaignId);
   if (!campaign) return new Response("not found", { status: 404 });
 
   const encoder = new TextEncoder();

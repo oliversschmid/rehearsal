@@ -14,8 +14,8 @@ const LIVE: CampaignStatus[] = ["active", "paused"];
 const COMPLETED: CampaignStatus[] = ["sent", "completed"];
 
 export default async function CampaignsPage() {
-  const campaigns = getCampaigns();
-  const audiences = getAudienceGroups();
+  const campaigns = await getCampaigns();
+  const audiences = await getAudienceGroups();
   const audMap = new Map(audiences.map((a) => [a.id, a.name]));
 
   const preLaunch = campaigns.filter((c) => PRE_LAUNCH.includes(c.status));

@@ -7,7 +7,7 @@ export const runtime = "nodejs";
 
 export async function POST(req: NextRequest) {
   const { campaignId, message } = await req.json();
-  const campaign = getCampaign(campaignId);
+  const campaign = await getCampaign(campaignId);
   if (!campaign) return NextResponse.json({ error: "not found" }, { status: 404 });
 
   const now = new Date().toISOString();

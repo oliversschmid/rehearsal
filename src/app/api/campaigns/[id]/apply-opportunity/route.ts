@@ -8,9 +8,9 @@ export const runtime = "nodejs";
 export async function POST(req: NextRequest, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
   const { opportunityId } = await req.json();
-  const campaign = getCampaign(id);
+  const campaign = await getCampaign(id);
   if (!campaign) return NextResponse.json({ error: "not found" }, { status: 404 });
-  const latest = getLatestRehearsal(id);
+  const latest = await getLatestRehearsal(id);
   const opp = latest?.opportunities.find((o) => o.id === opportunityId);
   if (!opp) return NextResponse.json({ error: "opportunity not found" }, { status: 404 });
 

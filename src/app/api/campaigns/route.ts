@@ -6,7 +6,7 @@ import { DEFAULT_SCHEDULE } from "@/lib/types";
 export const runtime = "nodejs";
 
 export async function GET() {
-  return NextResponse.json(getCampaigns());
+  return NextResponse.json(await getCampaigns());
 }
 
 export async function POST(req: NextRequest) {

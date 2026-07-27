@@ -154,17 +154,33 @@ async function loadCache(): Promise<void> {
 await loadCache();
 
 /**
- * Read a collection. In prod (blob mode), returns the in-memory cache so
- * we don't fetch blobs on every request. In dev (fs mode), re-reads from
- * disk each time to avoid stale-cache issues when Turbopack splits routes
- * into separate module instances — POST-in-one-route + GET-in-another
- * would otherwise see divergent caches.
+ * Sync read from cache. Safe for static seed data (customers, historical,
+ * scorecard) that only changes when the deploy rebuilds. In dev, re-reads
+ * from disk each time to avoid Turbopack module-instance drift.
  */
 function read<K extends Key>(key: K): Cache[K] {
   if (!USE_BLOB) {
     return fsReadJson(key, cache[key]) as Cache[K];
   }
   return cache[key];
+}
+
+/**
+ * Async read that ALWAYS pulls the latest state from storage. Required for
+ * mutable collections (campaigns, audiences, rehearsals) because each
+ * Vercel serverless instance has its own in-memory cache — a POST on one
+ * instance won't propagate to a warm instance serving the next GET.
+ */
+async function readFresh<K extends Key>(key: K): Promise<Cache[K]> {
+  if (USE_BLOB) {
+    const fresh = await blobReadJson<Cache[K]>(key);
+    if (fresh !== null) {
+      (cache as Record<string, unknown>)[key] = fresh;
+      return fresh;
+    }
+    return cache[key];
+  }
+  return fsReadJson(key, cache[key]) as Cache[K];
 }
 
 async function persist<K extends Key>(key: K): Promise<void> {
@@ -186,14 +202,14 @@ export function getCustomer(id: string): Customer | undefined {
   return read("customers").find((c) => c.id === id);
 }
 
-export function getAudienceGroups(): AudienceGroup[] {
-  return read("audiences");
+export async function getAudienceGroups(): Promise<AudienceGroup[]> {
+  return readFresh("audiences");
 }
-export function getAudienceGroup(id: string): AudienceGroup | undefined {
-  return read("audiences").find((a) => a.id === id);
+export async function getAudienceGroup(id: string): Promise<AudienceGroup | undefined> {
+  return (await readFresh("audiences")).find((a) => a.id === id);
 }
 export async function saveAudienceGroup(group: AudienceGroup): Promise<void> {
-  const all = read("audiences");
+  const all = await readFresh("audiences");
   const idx = all.findIndex((a) => a.id === group.id);
   if (idx >= 0) all[idx] = group;
   else all.push(group);
@@ -201,7 +217,8 @@ export async function saveAudienceGroup(group: AudienceGroup): Promise<void> {
   await persist("audiences");
 }
 export async function deleteAudienceGroup(id: string): Promise<void> {
-  cache.audiences = read("audiences").filter((a) => a.id !== id);
+  const all = await readFresh("audiences");
+  cache.audiences = all.filter((a) => a.id !== id);
   await persist("audiences");
 }
 
@@ -209,15 +226,15 @@ export function getHistoricalCampaigns(): HistoricalCampaign[] {
   return read("historical");
 }
 
-export function getCampaigns(): Campaign[] {
-  return read("campaigns");
+export async function getCampaigns(): Promise<Campaign[]> {
+  return readFresh("campaigns");
 }
-export function getCampaign(id: string): Campaign | undefined {
-  return read("campaigns").find((c) => c.id === id);
+export async function getCampaign(id: string): Promise<Campaign | undefined> {
+  return (await readFresh("campaigns")).find((c) => c.id === id);
 }
 export async function saveCampaign(campaign: Campaign): Promise<void> {
   campaign.updatedAt = new Date().toISOString();
-  const all = read("campaigns");
+  const all = await readFresh("campaigns");
   const idx = all.findIndex((c) => c.id === campaign.id);
   if (idx >= 0) all[idx] = campaign;
   else all.push(campaign);
@@ -225,26 +242,27 @@ export async function saveCampaign(campaign: Campaign): Promise<void> {
   await persist("campaigns");
 }
 export async function deleteCampaign(id: string): Promise<void> {
-  cache.campaigns = read("campaigns").filter((c) => c.id !== id);
+  const all = await readFresh("campaigns");
+  cache.campaigns = all.filter((c) => c.id !== id);
   await persist("campaigns");
 }
 
-export function getRehearsals(): RehearsalResult[] {
-  return read("rehearsals");
+export async function getRehearsals(): Promise<RehearsalResult[]> {
+  return readFresh("rehearsals");
 }
-export function getLatestRehearsal(campaignId: string): RehearsalResult | undefined {
-  return read("rehearsals")
+export async function getLatestRehearsal(campaignId: string): Promise<RehearsalResult | undefined> {
+  return (await readFresh("rehearsals"))
     .filter((r) => r.campaignId === campaignId)
     .sort((a, b) => b.ranAt.localeCompare(a.ranAt))[0];
 }
 export async function saveRehearsal(r: RehearsalResult): Promise<void> {
   if (!r.distribution) r.distribution = computeDistribution(r);
-  const all = read("rehearsals");
+  const all = await readFresh("rehearsals");
   if (!r.diffSummary) {
     const prior = all
       .filter((x) => x.campaignId === r.campaignId)
       .sort((a, b) => b.ranAt.localeCompare(a.ranAt))[0];
-    const campaign = getCampaign(r.campaignId);
+    const campaign = await getCampaign(r.campaignId);
     r.diffSummary = computeDiffSummary(campaign, prior);
   }
   all.push(r);
@@ -298,7 +316,7 @@ export async function overrideLatestRehearsal(
   campaignId: string,
   patch: Partial<RehearsalResult["verdict"]>,
 ): Promise<void> {
-  const all = read("rehearsals");
+  const all = await readFresh("rehearsals");
   const idx = all
     .map((r, i) => ({ r, i }))
     .filter(({ r }) => r.campaignId === campaignId)

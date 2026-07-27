@@ -12,7 +12,7 @@ export const runtime = "nodejs";
  */
 export async function GET(_req: NextRequest, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
-  const runs = getRehearsals()
+  const runs = (await getRehearsals())
     .filter((r) => r.campaignId === id)
     .sort((a, b) => b.ranAt.localeCompare(a.ranAt));
   const hydrated = runs.map((r, i) => hydrate(r, runs[i + 1] ?? null));

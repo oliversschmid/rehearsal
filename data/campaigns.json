@@ -1433,5 +1433,85 @@
         "runId": "run-1785186764974"
       }
     ]
+  },
+  {
+    "id": "c-1785190937084",
+    "name": "testing new",
+    "goal": "",
+    "audienceGroupId": "ag-lapsed-first",
+    "tags": [],
+    "status": "draft",
+    "schedule": {
+      "timezone": "America/Los_Angeles",
+      "sendWindow": {
+        "startHour": 9,
+        "endHour": 18
+      },
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "frequencyCap": {
+        "max": 3,
+        "per": "week"
+      },
+      "respectSmsQuietHours": true,
+      "sendTimeOptimization": false
+    },
+    "flow": {
+      "rootId": "n1",
+      "nodes": {
+        "n1": {
+          "id": "n1",
+          "type": "trigger",
+          "audienceLabel": "enters audience: Lapsed first-timers"
+        }
+      }
+    },
+    "createdAt": "2026-07-27T22:22:17.084Z",
+    "updatedAt": "2026-07-27T22:22:17.084Z"
+  },
+  {
+    "id": "c-1785191023336",
+    "name": "testing local",
+    "goal": "",
+    "audienceGroupId": "ag-lapsed-first",
+    "tags": [],
+    "status": "draft",
+    "schedule": {
+      "timezone": "America/Los_Angeles",
+      "sendWindow": {
+        "startHour": 9,
+        "endHour": 18
+      },
+      "daysOfWeek": [
+        1,
+        2,
+        3,
+        4,
+        5
+      ],
+      "frequencyCap": {
+        "max": 3,
+        "per": "week"
+      },
+      "respectSmsQuietHours": true,
+      "sendTimeOptimization": false
+    },
+    "flow": {
+      "rootId": "n1",
+      "nodes": {
+        "n1": {
+          "id": "n1",
+          "type": "trigger",
+          "audienceLabel": "enters audience: Lapsed first-timers"
+        }
+      }
+    },
+    "createdAt": "2026-07-27T22:23:43.336Z",
+    "updatedAt": "2026-07-27T22:23:43.336Z"
   }
 ]

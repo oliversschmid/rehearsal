@@ -7,7 +7,7 @@ export const dynamic = "force-dynamic";
 
 export async function POST(req: NextRequest) {
   const { campaignId } = await req.json();
-  const campaign = getCampaign(campaignId);
+  const campaign = await getCampaign(campaignId);
   if (!campaign) return new Response("not found", { status: 404 });
 
   const encoder = new TextEncoder();

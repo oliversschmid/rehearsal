@@ -121,8 +121,8 @@ export function campaignCeiling(campaign: Campaign): number {
 /** All audience members participate in a rehearsal (an email flow reaches
  * everyone). Per-node channel filtering happens inside streamRehearsal so
  * SMS-only sends only fire against SMS-opted-in twins for those nodes. */
-function eligibleTwinsFor(campaign: Campaign, allCustomers: Customer[]): Customer[] {
-  const group = getAudienceGroup(campaign.audienceGroupId);
+async function eligibleTwinsFor(campaign: Campaign, allCustomers: Customer[]): Promise<Customer[]> {
+  const group = await getAudienceGroup(campaign.audienceGroupId);
   if (!group) return [];
   const memberSet = new Set(group.memberIds);
   const excludeSet = new Set(campaign.exclusions ?? []);
@@ -133,8 +133,8 @@ function twinsForNode(twins: Customer[], channel: "email" | "sms"): Customer[] {
   return channel === "sms" ? twins.filter((t) => t.engagement.smsOptedIn) : twins;
 }
 
-export function estimatedEligibleCount(campaign: Campaign): { eligible: number; total: number; smsOptedOut: number } {
-  const group = getAudienceGroup(campaign.audienceGroupId);
+export async function estimatedEligibleCount(campaign: Campaign): Promise<{ eligible: number; total: number; smsOptedOut: number }> {
+  const group = await getAudienceGroup(campaign.audienceGroupId);
   if (!group) return { eligible: 0, total: 0, smsOptedOut: 0 };
   const messageNodes = collectMessageNodes(campaign);
   const smsPresent = messageNodes.some((m) => m.channel === "sms");
@@ -165,7 +165,7 @@ export type RehearseEvent =
 export async function* streamRehearsal(campaign: Campaign): AsyncGenerator<RehearseEvent> {
   const runId = `run-${Date.now()}`;
   const allCustomers = getCustomers();
-  const twins = eligibleTwinsFor(campaign, allCustomers);
+  const twins = await eligibleTwinsFor(campaign, allCustomers);
   const messageNodes = collectMessageNodes(campaign);
   yield { type: "start", totalTwins: twins.length, runId };
 

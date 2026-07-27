@@ -5,7 +5,7 @@ import type { AudienceGroup } from "@/lib/types";
 export const runtime = "nodejs";
 
 export async function GET() {
-  const groups = getAudienceGroups();
+  const groups = await getAudienceGroups();
   const customers = getCustomers();
   const enriched = groups.map((g) => {
     const members = customers.filter((c) => g.memberIds.includes(c.id));

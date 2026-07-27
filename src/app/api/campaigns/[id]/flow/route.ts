@@ -6,7 +6,7 @@ export const runtime = "nodejs";
 
 export async function PUT(req: NextRequest, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
-  const campaign = getCampaign(id);
+  const campaign = await getCampaign(id);
   if (!campaign) return NextResponse.json({ error: "not found" }, { status: 404 });
   const flow: Flow = await req.json();
   campaign.flow = flow;

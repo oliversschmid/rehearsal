@@ -16,8 +16,8 @@ import type { Customer } from "@/lib/types";
 
 export const dynamic = "force-dynamic";
 
-export default function AudiencesPage() {
-  const groups = getAudienceGroups();
+export default async function AudiencesPage() {
+  const groups = await getAudienceGroups();
   const customers = getCustomers();
   const agg = aggregateMetrics(customers);
 

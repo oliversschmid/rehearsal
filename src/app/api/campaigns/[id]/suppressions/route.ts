@@ -6,9 +6,9 @@ export const runtime = "nodejs";
 export async function POST(req: NextRequest, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
   const body = await req.json();
-  const campaign = getCampaign(id);
+  const campaign = await getCampaign(id);
   if (!campaign) return NextResponse.json({ error: "not found" }, { status: 404 });
-  const latest = getLatestRehearsal(id);
+  const latest = await getLatestRehearsal(id);
   if (!latest) return NextResponse.json({ error: "no rehearsal" }, { status: 400 });
 
   const reasons: string[] = body.reasons ?? [];

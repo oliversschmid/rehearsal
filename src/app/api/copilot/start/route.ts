@@ -11,7 +11,7 @@ export async function POST(req: NextRequest) {
   const body = (await req.json()) as { prompt: string; context: CopilotContext };
   const now = new Date().toISOString();
   const id = `co-${Date.now()}`;
-  const audience = body.context.audienceGroupId ? getAudienceGroup(body.context.audienceGroupId) : null;
+  const audience = body.context.audienceGroupId ? await getAudienceGroup(body.context.audienceGroupId) : null;
   const audienceLabel = audience ? `enters audience: ${audience.name}` : "enters audience";
 
   const flow: Flow = {

@@ -26,7 +26,7 @@ export default async function AudienceDetailPage(props: {
   const { id } = await props.params;
   const search = await props.searchParams;
   const activeTheme = (search?.theme as string) as TicketTheme | undefined;
-  const group = getAudienceGroup(id);
+  const group = await getAudienceGroup(id);
   if (!group) return notFound();
   const allSampleCustomers = getCustomers().filter((c) => group.memberIds.includes(c.id));
 

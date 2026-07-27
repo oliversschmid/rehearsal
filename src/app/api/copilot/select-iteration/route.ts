@@ -10,7 +10,7 @@ export const runtime = "nodejs";
  */
 export async function POST(req: NextRequest) {
   const { campaignId, iteration } = (await req.json()) as { campaignId: string; iteration: number };
-  const campaign = getCampaign(campaignId);
+  const campaign = await getCampaign(campaignId);
   if (!campaign) return NextResponse.json({ error: "not found" }, { status: 404 });
 
   const snap = campaign.copilotIterations?.find((s) => s.iteration === iteration);

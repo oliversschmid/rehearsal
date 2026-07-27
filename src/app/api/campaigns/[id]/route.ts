@@ -5,14 +5,14 @@ export const runtime = "nodejs";
 
 export async function GET(_req: NextRequest, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
-  const c = getCampaign(id);
+  const c = await getCampaign(id);
   if (!c) return NextResponse.json({ error: "not found" }, { status: 404 });
   return NextResponse.json(c);
 }
 
 export async function PUT(req: NextRequest, ctx: { params: Promise<{ id: string }> }) {
   const { id } = await ctx.params;
-  const existing = getCampaign(id);
+  const existing = await getCampaign(id);
   if (!existing) return NextResponse.json({ error: "not found" }, { status: 404 });
   const body = await req.json();
   const merged = { ...existing, ...body, id };

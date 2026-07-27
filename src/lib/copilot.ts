@@ -20,11 +20,11 @@ async function getClient() {
 }
 
 /** Enriched context used by prompts. */
-function contextSummary(ctx: CopilotContext | undefined): string {
+async function contextSummary(ctx: CopilotContext | undefined): Promise<string> {
   if (!ctx) return "";
   const bits: string[] = [];
   if (ctx.audienceGroupId) {
-    const ag = getAudienceGroup(ctx.audienceGroupId);
+    const ag = await getAudienceGroup(ctx.audienceGroupId);
     if (ag) {
       const size = ag.memberIds.length;
       const customers = getCustomers().filter((c) => ag.memberIds.includes(c.id));
@@ -36,7 +36,7 @@ function contextSummary(ctx: CopilotContext | undefined): string {
     bits.push(`Support themes to weigh: ${ctx.ticketThemes.join(", ")}.`);
   }
   if (ctx.referenceCampaignIds?.length) {
-    const refs = getCampaigns().filter((c) => ctx.referenceCampaignIds?.includes(c.id));
+    const refs = (await getCampaigns()).filter((c) => ctx.referenceCampaignIds?.includes(c.id));
     if (refs.length) {
       bits.push(
         "Reference past campaigns:\n" +
@@ -80,7 +80,7 @@ export async function generateCampaignMeta(
   const client = await getClient();
   if (client) {
     try {
-      const audience = ctx.audienceGroupId ? getAudienceGroup(ctx.audienceGroupId) : null;
+      const audience = ctx.audienceGroupId ? await getAudienceGroup(ctx.audienceGroupId) : null;
       // @ts-expect-error dynamic sdk shape
       const resp = await client.messages.create({
         model: process.env.ANTHROPIC_MODEL ?? "claude-haiku-4-5-20251001",
@@ -105,12 +105,12 @@ export async function generateCampaignMeta(
       }
     } catch { /* fall through to mock */ }
   }
-  return mockGenerateMeta(prompt, ctx);
+  return await mockGenerateMeta(prompt, ctx);
 }
 
-function mockGenerateMeta(prompt: string, ctx: CopilotContext): { name: string; description: string } {
+async function mockGenerateMeta(prompt: string, ctx: CopilotContext): Promise<{ name: string; description: string }> {
   const p = prompt.toLowerCase();
-  const audience = ctx.audienceGroupId ? getAudienceGroup(ctx.audienceGroupId) : null;
+  const audience = ctx.audienceGroupId ? await getAudienceGroup(ctx.audienceGroupId) : null;
 
   let intent: string;
   if (/reactivat|winback|win back|lapsed|come back|return|bring back/.test(p)) intent = "winback";
@@ -173,7 +173,7 @@ export async function copilotChat(
   opts: { forceChat?: boolean } = {},
 ): Promise<{ reply: string; intent: "chat" | "ready_to_generate" | "modify_and_rerun" }> {
   const history = campaign.copilotHistory ?? [];
-  const ctxStr = contextSummary(campaign.copilotContext);
+  const ctxStr = await contextSummary(campaign.copilotContext);
   const trimmed = userMessage.trim();
 
   // Broad set of phrases that mean "stop asking, start building". Single-word
@@ -237,19 +237,19 @@ Copilot state: ${campaign.copilotState ?? "gathering"}${opts.forceChat ? " — t
       });
       const first = resp.content?.[0];
       const text: string = first && "text" in first ? first.text : "";
-      return { reply: text || mockReply(campaign, userMessage, intent), intent };
+      return { reply: text || (await mockReply(campaign, userMessage, intent)), intent };
     } catch {
       // fall through to mock
     }
   }
-  return { reply: mockReply(campaign, userMessage, intent), intent };
+  return { reply: await mockReply(campaign, userMessage, intent), intent };
 }
 
-function mockReply(campaign: Campaign, userMessage: string, intent: "chat" | "ready_to_generate" | "modify_and_rerun"): string {
+async function mockReply(campaign: Campaign, userMessage: string, intent: "chat" | "ready_to_generate" | "modify_and_rerun"): Promise<string> {
   const history = campaign.copilotHistory ?? [];
   const turnCount = history.filter((h) => h.role === "user").length;
   const ctx = campaign.copilotContext;
-  const audienceName = ctx?.audienceGroupId ? getAudienceGroup(ctx.audienceGroupId)?.name : "your audience";
+  const audienceName = ctx?.audienceGroupId ? (await getAudienceGroup(ctx.audienceGroupId))?.name : "your audience";
 
   if (intent === "ready_to_generate") {
     return `Got it. I'll draft the flow and rehearse it against ${audienceName} — a few passes to tune the copy. Give me about 30 seconds.`;
@@ -345,7 +345,7 @@ function firstTurnScopingQuestion(prompt: string, campaign: Campaign, audienceNa
 
 export async function generateInitialFlow(campaign: Campaign): Promise<Flow> {
   const ctx = campaign.copilotContext;
-  const audience = ctx?.audienceGroupId ? getAudienceGroup(ctx.audienceGroupId) : null;
+  const audience = ctx?.audienceGroupId ? await getAudienceGroup(ctx.audienceGroupId) : null;
   const audienceLabel = audience ? `enters audience: ${audience.name}` : "enters audience";
   const channels = resolvedChannels(ctx);
   const wantsEmail = channels.includes("email");
@@ -493,7 +493,7 @@ async function draftFlowWithClaude(campaign: Campaign): Promise<{ email?: Messag
   const client = await getClient();
   if (!client) return null;
   const ctx = campaign.copilotContext;
-  const ctxStr = contextSummary(ctx);
+  const ctxStr = await contextSummary(ctx);
   const channels = resolvedChannels(ctx);
   const wantsEmail = channels.includes("email");
   const wantsSms = channels.includes("sms");
