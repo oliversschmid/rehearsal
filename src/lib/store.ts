@@ -76,14 +76,23 @@ function fsExists(key: Key): boolean {
 
 /* ---------------- blob adapter (prod) -------------------------- */
 
-async function blobReadJson<T>(key: Key): Promise<T | null> {
-  const { list } = await import("@vercel/blob");
-  const { blobs } = await list({ prefix: `${key}.json`, limit: 1 });
-  const blob = blobs[0];
-  if (!blob) return null;
-  const res = await fetch(blob.url, { cache: "no-store" });
-  if (!res.ok) return null;
-  return (await res.json()) as T;
+/**
+ * Distinguishes "the blob genuinely isn't there" (safe to seed) from "the read
+ * failed" (must NOT seed — that would overwrite live data with seed data).
+ * Transport/service failures throw rather than resolving to `missing`.
+ */
+type BlobRead<T> = { found: true; data: T } | { found: false };
+
+async function blobReadJson<T>(key: Key): Promise<BlobRead<T>> {
+  const { get } = await import("@vercel/blob");
+  // `useCache: false` reads from origin storage. Reading the public blob URL
+  // instead would go through the CDN, which holds a copy for at least 60s
+  // (cacheControlMaxAge cannot be set below 1 minute) — so a read immediately
+  // after a write serves the PRE-write JSON. That is what made a freshly
+  // created campaign 404 until the TTL lapsed.
+  const res = await get(`${key}.json`, { access: "public", useCache: false });
+  if (!res || res.statusCode !== 200) return { found: false };
+  return { found: true, data: (await new Response(res.stream).json()) as T };
 }
 async function blobWriteJson(key: Key, data: unknown): Promise<void> {
   const { put } = await import("@vercel/blob");
@@ -92,6 +101,9 @@ async function blobWriteJson(key: Key, data: unknown): Promise<void> {
     addRandomSuffix: false,
     contentType: "application/json",
     allowOverwrite: true,
+    // Minimum permitted value. Reads bypass the CDN, so this only bounds how
+    // long anything hitting the public URL directly can lag behind.
+    cacheControlMaxAge: 60,
   });
 }
 
@@ -133,9 +145,18 @@ async function loadCache(): Promise<void> {
   if (USE_BLOB) {
     await Promise.all(
       KEYS.map(async (k) => {
-        const existing = await blobReadJson(k);
-        if (existing !== null) {
-          (cache as Record<string, unknown>)[k] = existing;
+        let existing: BlobRead<unknown>;
+        try {
+          existing = await blobReadJson(k);
+        } catch (err) {
+          // A transient blob failure must not be mistaken for "first run".
+          // Seed in memory only; writing here would destroy live data.
+          console.error(`[store] blob read failed for ${k}, not seeding`, err);
+          (cache as Record<string, unknown>)[k] = seed[k];
+          return;
+        }
+        if (existing.found) {
+          (cache as Record<string, unknown>)[k] = existing.data;
         } else {
           (cache as Record<string, unknown>)[k] = seed[k];
           await blobWriteJson(k, seed[k]);
@@ -173,10 +194,14 @@ function read<K extends Key>(key: K): Cache[K] {
  */
 async function readFresh<K extends Key>(key: K): Promise<Cache[K]> {
   if (USE_BLOB) {
+    // Deliberately NOT wrapped in try/catch. Mutators (saveCampaign et al.)
+    // read through here and then persist the result — swallowing a read error
+    // and returning the stale cache would write that stale array back over
+    // live data. Failing loudly is the safe behaviour.
     const fresh = await blobReadJson<Cache[K]>(key);
-    if (fresh !== null) {
-      (cache as Record<string, unknown>)[key] = fresh;
-      return fresh;
+    if (fresh.found) {
+      (cache as Record<string, unknown>)[key] = fresh.data;
+      return fresh.data;
     }
     return cache[key];
   }
